@@ -6,9 +6,7 @@ layout: layouts/base.njk
 
 We develop digital solutions that grow your business online
 
-## ABOUT
-
-<div class="about">
+## SOBRE
 
 <div class="about-col-1">
 Somos uma equipa dedicada que torna as tuas ideias de negócio numa realidade no mundo digital. 
@@ -19,10 +17,101 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 </div>
 
 <div class="about-col-2">
-<img class="">
+<img src="/images/team-big.png" class="img_team">
 </div>
-	
+
+
+## SERVIÇOS
+
+<div class="services-col-1"></div>
+<img class="service-1" src="/images/svg/pencil-ruler-solid.svg">
+
+### Design Gráfico
+
+Logótipo
+<br>
+Cartões de Visita
+<br>
+Flyers
+<br>
+Desdobráveis
+<br>
+Poster
+
 </div>
+
+<div class="services-col-2">
+<img class="service-2" src="/images/svg/object-group-regular.svg">
+
+### Design Web
+
+Wireframe
+<br>
+Prototipagem
+<br>
+UI/UX
+<br>
+Responsivo
+
+</div>
+
+<div class="services-col-3">
+<img class="service-3" src="/images/svg/desktop-solid.svg">
+
+### Website Customizado
+
+HTML
+<br>
+CSS
+<br>
+Bootstrap
+<br>
+Javascript
+<br>
+Node.js
+<br>
+Website builders
+
+</div>
+
+<div class="services-col-4">
+<img class="service-4" src="/images/svg/bullseye-solid.svg">
+
+### Marketing Digital
+
+Publicidade paga online (PPC)
+<br>
+Gestão de redes socias
+<br>
+Email marketing
+<br>
+SEO
+
+</div>
+
+## FALE CONNOSCO
+
+<div class="services-col-1">
+
+Se tiver alguma dúvida ou não souber concretamente o que precisa, pode entrar em contacto connosco através dos seguintes canais:
+
+<img class="" src="/images/svg/envelope-regular.svg">info@zetazone.com
+<img class="" src="/images/svg/whatsapp-brands.svg">+351 911 999 888
+
+</div>
+
+<div class="services-col-2">
+
+<img class="" src="/images/conversation.png">
+
+</div>
+
+
+
+
+
+
+
 
 
 
