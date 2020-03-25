@@ -1,7 +1,7 @@
 /**
  * GHColors theme by Avi Aryan (http://aviaryan.in)
  * Inspired by Github syntax coloring
- */
+
 
  code[class*="language-"],
  pre[class*="language-"] {
@@ -35,14 +35,13 @@
      background: #b3d4fc;
  }
 
- /* Code blocks */
+ * Code blocks 
  pre[class*="language-"] {
      padding: 1em;
      margin: 2em 0;
      overflow: auto;
      background-color: mix($text-color,$accent-color, 80%);
  }
-
 
 
  .token.comment,
@@ -63,7 +62,7 @@
  }
  .token.punctuation,
  .token.operator {
-     color: #393A34; /* no highlight */
+     color: #393A34; *** no highlight ***
  }
 
  .token.entity,
@@ -94,3 +93,4 @@
      color: #00009f;
  }
 
+*/

@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background-color: $text-color-1;
+  color: $page-color-1;
+}
+::selection {
+  background-color: $text-color-1;
+  color: $page-color-1;
+}
+
+html {
+  //background-color: $accent-color;
+}
+
+body {
+  text-align: center;
+  background-color: $page-color-1;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.8;
+  min-height: 100vh;
+  background:  $page-color-1;
+  background: url(/images/bg-grid.png);
+
+  @media (min-width: $narrow) {
+    font-size: 18px;
+  };
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  text-align: left;
+  @media (min-width: $mid) {
+    width: 600px;
+  };
+  @media (min-width: $wide) {
+    width: 700px;
+  };
+}
+
+
+h1 {
+  font-size: 3em;
+  margin-top:0.4em;
+  margin-bottom:0.2em;
+  line-height: 1;
+
+  @media (min-width: $mid) {
+    font-size: 5em;
+  };
+  @media (min-width: $wide) {
+    font-size: 6em;
+  };
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ul, ol {
+  padding-left: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+

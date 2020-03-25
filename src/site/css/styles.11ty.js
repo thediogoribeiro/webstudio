@@ -1,10 +1,16 @@
+//import postcss from 'postcss';
+//import precss from 'precss';
 const fs = require('fs');
 const path = require('path');
 const postcss = require('postcss');
+const precss = require('precss')
 
 // the file name as an entry point for postcss compilation
 // also used to define the output filename in our output /css folder.
 const fileName = "styles.css";
+
+precss.process("styles.css");
+postcss([precss(/* options */)]).process("styles.css");
 
 module.exports = class {
   async data () {
