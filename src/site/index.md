@@ -6,6 +6,11 @@ layout: layouts/base.njk
 
 We develop digital solutions that grow your business online
 
+<div><a class="header_btn">Pedir Orçamento</a></div>
+
+<!---------------------------------------------------------------------->
+<div id="about">
+
 ## SOBRE
 
 <div class="about-col-1">
@@ -20,10 +25,13 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 <img src="/images/team-big.png" class="img_team">
 </div>
 
+</div>
+<!---------------------------------------------------------------------->
+<div id="services">
 
 ## SERVIÇOS
 
-<div class="services-col-1"></div>
+<div class="services-col-1">
 <img class="service-1" src="/images/svg/pencil-ruler-solid.svg">
 
 ### Design Gráfico
@@ -89,6 +97,19 @@ SEO
 
 </div>
 
+</div>
+<!---------------------------------------------------------------------->
+<div id="clients">
+
+## Clientes
+
+<img class="" src="/images/">
+<img class="" src="/images/">
+
+</div>
+<!---------------------------------------------------------------------->
+<div id="talk">
+
 ## FALE CONNOSCO
 
 <div class="services-col-1">
@@ -106,7 +127,7 @@ Se tiver alguma dúvida ou não souber concretamente o que precisa, pode entrar 
 
 </div>
 
-
+</div>
 
 
 

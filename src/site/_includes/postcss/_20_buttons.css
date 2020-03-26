@@ -1,0 +1,19 @@
+.header_btn {
+	background-color: $main-green;
+	color: $dark-blue;
+	padding: 12px 15px;
+	text-align: center;
+	border: 1.25px solid $main-green;
+	border-radius: 11px;
+	box-shadow: 2px 1px 5px $neon-green;
+}
+	
+.quote_btn {
+	background-color: $dark-blue;
+	color: $grey;
+	padding: 12px 15px;
+	text-align: center;
+	border: 1.25px solid $dark-blue;
+	border-radius: 5px;
+	box-shadow: 2px 1px 5px $dark-blue;
+}

@@ -16,25 +16,42 @@ $text-color-2: #04d976;
 $accent-color: #f2f2f2;
 $dark-color: #1a2040;
 
+$dark-blue: #1a2040;
+$main-green: #04d976;
+$neon-green: #05f283;
+$grey: #f2f2f2;
 
 /* hide classes */
+.hide_sm {
+	@media screen and (min-width: $sm) and (max-width: $md) {
+		display: none;
+	}
+}
 
-@media screen (max-width: $md -1) and (min-width: $sm) {
+@media screen and (min-width: $md) {
 	.hide_sm {
 		display: block;
 	}
+}
+
+
+@media screen and (min-width: $sm) and (max-width: $md) {
+	.hide_lg {
+		display: block;
+	}
+}
+
+@media screen and (min-width: $md) {
 	.hide_lg {
 		display: none;
 	}
 }
 
-@media screen (min-width: $md) {
-	.hide_sm {
-		display: none;
-	}
-	.hide_lg {
-		display: block;
-	}
-}
+
+
+
+
+
+
 
 

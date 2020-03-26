@@ -5,7 +5,7 @@
   li {
     display: inline;
   }
-
+  /*
   a:link,
   a:visited {
     display: inline-block;
@@ -22,11 +22,12 @@
     color: mix($text-color-1, $accent-color, 80%);
     text-decoration: none;
   }
+
   a:hover,
   a:focus {
-      color: $text-color-1;
-      border-top-color: $text-color-1;
-      border-bottom-style: none;
+    color: $text-color-1;
+    border-top-color: $text-color-1;
+    border-bottom-style: none;
   }
 
   small {
@@ -34,7 +35,46 @@
     font-size: 0.7em;
     color: mix($text-color-1,$accent-color, 60%);
   }
+  */
 }
+
+.navbar_icon {
+  @media screen and (min-width: $md) {
+    display: none;
+  }
+  @media screen and (min-width: $sm) and (max-width: $md) {
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hamburger {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+    justify-self: end;
+    img {
+      height: 40px;
+      width: auto;
+      fill: $dark-blue;
+    }
+  }
+}
+
+
+.navbar_links {
+  display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
