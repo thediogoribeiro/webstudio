@@ -22,19 +22,6 @@
     color: mix($text-color-1, $accent-color, 80%);
     text-decoration: none;
   }
-
-  a:hover,
-  a:focus {
-    color: $text-color-1;
-    border-top-color: $text-color-1;
-    border-bottom-style: none;
-  }
-
-  small {
-    display: block;
-    font-size: 0.7em;
-    color: mix($text-color-1,$accent-color, 60%);
-  }
   */
 }
 
@@ -46,6 +33,12 @@
     display: grid;
     grid-template-rows: 80px;
     grid-template-columns: 1fr 1fr;
+    position: relative;
+    width: 100vw;
+    margin-left: -25px;
+    top: 0px;
+    z-index: 2;
+    background-color: $grey;
   }
   .hamburger {
     grid-column-start: 2;
@@ -56,14 +49,47 @@
       height: 40px;
       width: auto;
       fill: $dark-blue;
+      position: relative;
+      margin-right: 25px;
+      z-index: 10;
     }
   }
 }
 
-
 .navbar_links {
   display: none;
-
+  position: absolute;
+  z-index: 2;
+  top: 80px;
+  left: 0px;
+  height: 90vh;
+  width: 100vw;
+  text-align: center;
+  font-color: $grey;
+  background-color: $dark-blue;
+  .nav_about {
+    position: relative;
+    margin-top: 110px;
+    margin-bottom: 50px;
+  }
+  .nav_services {
+    margin-bottom: 50px;
+  }
+  .nav_clients {
+    margin-bottom: 50px;
+  }
+  .nav_talk {
+    margin-bottom: 50px;
+  }
+  .nav_clouds {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 40px;
+    //left: 0px;
+    text-align: center;
+    height: 93px;
+    width: auto;
+  }
 }
 
 

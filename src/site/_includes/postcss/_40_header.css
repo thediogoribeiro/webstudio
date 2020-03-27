@@ -1,0 +1,75 @@
+header {
+	height: 100vh;
+	
+}
+
+.header_container {
+	position: relative;
+	z-index: 1; 
+	height: 100vh;
+	margin-top: -80px;
+	display: grid;
+	grid-template-rows: 30% 36% 34%;
+	grid-template-columns: 1fr;
+}
+
+.title {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	align-self: end;
+	text-align: left;
+	color: $main-green;
+}
+
+.subtitle {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	align-self: start;
+	text-align: left;
+	color: $main-green;
+}
+
+.intro_text {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	align-self: center;
+	text-align: left;
+	color: $main-green;
+}
+
+.intro_btn {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	align-self: start;
+}
+
+.nav_house {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	align-self: end;
+	position: absolute;
+	z-index: 0;
+	left: 0px;
+	bottom: -35px;
+	width: 100vw;
+	max-width: 100%;
+	overflow: hidden;
+	img {
+		position: relative;
+		left: -178px;
+		height: 383px;
+		width: auto;
+	}
+}
+
+

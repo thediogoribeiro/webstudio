@@ -9,12 +9,15 @@ function btnHandler(selector, callback) {
 }
 
 // MENU hamburger
-function showBurger(clas) {
-  var x = document.getElementById(clas);
+function showBurger(id1, id2) {
+  var x = document.getElementById(id1);
+  var y = document.getElementById(id2);
   if (x.style.display === "block") {
     x.style.display = "none";
+    y.src = "/images/svg/bars-solid.svg";
   } else {
     x.style.display = "block";
+    y.src = "/images/svg/times-solid.svg"
   }
 }
 

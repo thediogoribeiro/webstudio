@@ -1,0 +1,15 @@
+#about {
+	background-color: $grey;
+	color: $dark-blue;
+
+	h2 {
+		margin-bottom: 30px;
+	}
+
+	.img_team {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		margin-top: 50px;
+	}
+}

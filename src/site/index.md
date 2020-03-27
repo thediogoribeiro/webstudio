@@ -4,10 +4,6 @@ subtitle: Digital Studio
 layout: layouts/base.njk
 ---
 
-We develop digital solutions that grow your business online
-
-<div><a class="header_btn">Pedir Orçamento</a></div>
-
 <!---------------------------------------------------------------------->
 <div id="about">
 
@@ -22,7 +18,7 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 </div>
 
 <div class="about-col-2">
-<img src="/images/team-big.png" class="img_team">
+<img class="img_team" src="/images/team-big.png">
 </div>
 
 </div>
@@ -101,7 +97,7 @@ SEO
 <!---------------------------------------------------------------------->
 <div id="clients">
 
-## Clientes
+## CLIENTES
 
 <img class="" src="/images/">
 <img class="" src="/images/">
