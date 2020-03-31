@@ -35,7 +35,7 @@
 			grid-column-start: 1;
 			grid-column-end: 2;
 			align-self: center;
-			border: 1.25px solid $main-green;
+			border: 3px solid $main-green;
 			width: 180px;
 			height: 125px;
 			margin: auto;
@@ -47,7 +47,7 @@
 			grid-row-end: 4;
 			grid-column-start: 1;
 			grid-column-end: 2;
-			border: 1.25px solid $main-green;
+			border: 3px solid $main-green;
 			width: 180px;
 			height: 125px;
 			margin: auto;
@@ -59,7 +59,7 @@
 			grid-row-end: 5;
 			grid-column-start: 1;
 			grid-column-end: 2;
-			border: 1.25px solid $main-green;
+			border: 3px solid $main-green;
 			width: 180px;
 			height: 125px;
 			margin: auto;
@@ -71,7 +71,7 @@
 			grid-row-end: 6;
 			grid-column-start: 1;
 			grid-column-end: 2;
-			border: 1.25px solid $main-green;
+			border: 3px solid $main-green;
 			width: 180px;
 			height: 125px;
 			padding: 30px 20px 0 20px;

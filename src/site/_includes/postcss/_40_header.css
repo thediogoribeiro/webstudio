@@ -1,6 +1,5 @@
 header {
 	height: 100vh;
-	
 }
 
 .header_container {
@@ -60,16 +59,30 @@ header {
 	position: absolute;
 	z-index: 0;
 	left: 0px;
-	bottom: -35px;
+	bottom: 0px;
 	width: 100vw;
 	max-width: 100%;
 	overflow: hidden;
-	img {
+	.img_city {
+		position: relative;
+		left: -45%;
+		bottom: -50px;
+		width: 158%;
+		max-width: 158%;
+		height: auto;
+	}
+
+}
+
+/* 
+img {
 		position: relative;
 		left: -178px;
-		height: 383px;
+		height: 383px; 
 		width: auto;
 	}
-}
+*/
+
+
 
 

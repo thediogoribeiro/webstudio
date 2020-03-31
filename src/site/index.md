@@ -99,8 +99,8 @@ SEO
 
 ## CLIENTES
 
-<img class="" src="/images/">
-<img class="" src="/images/">
+<img class="img_client-1" src="/images/clients/cll-white.png">
+<img class="img_client-2" src="/images/clients/cll-black.png">
 
 </div>
 <!---------------------------------------------------------------------->
@@ -108,16 +108,16 @@ SEO
 
 ## FALE CONNOSCO
 
-<div class="services-col-1">
+<div class="talk-col-1">
 
 Se tiver alguma dúvida ou não souber concretamente o que precisa, pode entrar em contacto connosco através dos seguintes canais:
 
-<img class="" src="/images/svg/envelope-regular.svg">info@zetazone.com
-<img class="" src="/images/svg/whatsapp-brands.svg">+351 911 999 888
+<p class="talk_text-1"><img class="talk_img-1" src="/images/svg/envelope-regular.svg">info@zetazone.com</p>
+<p class="talk_text-2"><img class="talk_img-2" src="/images/svg/whatsapp-brands.svg">+351 911 999 888</p>
 
 </div>
 
-<div class="services-col-2">
+<div class="talk-col-2">
 
 <img class="" src="/images/conversation.png">
 

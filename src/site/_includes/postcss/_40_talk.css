@@ -1,3 +1,37 @@
 #talk {
 	background-color: $grey;
+
+	h2 {
+		margin-top: 10px;
+		margin-bottom: 40px;
+	}
+	p {
+		color: $dark-blue;
+	}
+
+	.talk-col-1 {
+		margin: 0 0 50px 0;
+		img {
+			width: 45px;
+			height: auto;
+		}
+		.talk_img-1, .talk_img-2 {
+			margin-right: 20px;
+			vertical-align: middle;
+		}
+
+		.talk_text-1, .talk_text-2 {
+			margin: 40px 0;
+		}
+		
+	}
+
+	.talk-col-2 {
+		padding: 10px;
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+		}
+	}
 }

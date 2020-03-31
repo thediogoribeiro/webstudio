@@ -5,24 +5,6 @@
   li {
     display: inline;
   }
-  /*
-  a:link,
-  a:visited {
-    display: inline-block;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: mix($text-color-1, $accent-color, 40%);
-    border-bottom-style: none;
-    padding-top: 0.8em;
-    padding-bottom: 2em;
-    margin-left: 0;
-    margin-right: 0.7em;
-    width: 9em;
-    text-align: left;
-    color: mix($text-color-1, $accent-color, 80%);
-    text-decoration: none;
-  }
-  */
 }
 
 .navbar_icon {
@@ -48,7 +30,6 @@
     img {
       height: 40px;
       width: auto;
-      fill: $dark-blue;
       position: relative;
       margin-right: 25px;
       z-index: 10;
@@ -69,26 +50,24 @@
   background-color: $dark-blue;
   .nav_about {
     position: relative;
-    margin-top: 110px;
-    margin-bottom: 50px;
+    margin-top: 50px;
   }
-  .nav_services {
-    margin-bottom: 50px;
-  }
-  .nav_clients {
-    margin-bottom: 50px;
-  }
-  .nav_talk {
-    margin-bottom: 50px;
+  p {
+    margin: 0 0 25px 0;
   }
   .nav_clouds {
     position: relative;
     z-index: 10;
-    margin-bottom: 40px;
+    margin: 20px 0 40px 0;
     //left: 0px;
     text-align: center;
     height: 93px;
     width: auto;
+  }
+  h3, p, a {
+    color: $main-green;
+    text-decoration: none;
+    font-size: 36px;
   }
 }
 
