@@ -18,7 +18,7 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 </div>
 
 <div class="about-col-2">
-<img class="img_team" src="/images/team-big.png">
+<img class="img_team" src="/images/team-big.svg">
 </div>
 
 </div>
@@ -119,7 +119,7 @@ Se tiver alguma dúvida ou não souber concretamente o que precisa, pode entrar 
 
 <div class="talk-col-2">
 
-<img class="" src="/images/conversation.png">
+<img class="" src="/images/conversation.svg">
 
 </div>
 

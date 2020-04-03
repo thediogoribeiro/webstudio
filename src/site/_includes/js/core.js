@@ -36,3 +36,20 @@ function showBurger(id1, id2) {
   }
 }
 
+
+function imgChange(){
+  console.log("x")
+  var x = document.getElementById('img_city');
+  if (document.documentElement.clientWidth >= 768){
+    x.src = "/images/house-desktop.png"
+  } else if (document.documentElement.clientWidth < 768){
+    x.src = "/images/house-mobile.png"
+  };
+}
+
+
+
+
+
+
+

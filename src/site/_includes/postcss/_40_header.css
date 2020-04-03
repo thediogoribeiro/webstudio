@@ -1,11 +1,27 @@
 header {
-	height: 100vh;
+	@media screen (min-height $sm) and (max-width: $sme) {
+		height: 93vh;
+	}
+	@media screen (min-width: $md) and (max-width: $mde) {
+		height: 93vh;
+	}
+	@media screen (min-width: $xl) {
+		height: 100vh;
+	}
 }
 
 .header_container {
+	@media screen and (min-width: $sm) and (max-width: $sme) {
+		height: 93vh;
+	}
+	@media screen and (min-width: $md) and (max-width: $lge) {
+		height: 93vh;
+	}
+	@media screen and (min-width: $xl) {
+		height: 100vh;
+	}
 	position: relative;
 	z-index: 1; 
-	height: 100vh;
 	margin-top: -80px;
 	display: grid;
 	grid-template-rows: 30% 36% 34%;
@@ -20,6 +36,8 @@ header {
 	align-self: end;
 	text-align: left;
 	color: $main-green;
+	position: relative;
+	z-index: 5;
 }
 
 .subtitle {
@@ -30,6 +48,8 @@ header {
 	align-self: start;
 	text-align: left;
 	color: $main-green;
+	position: relative;
+	z-index: 5;
 }
 
 .intro_text {
@@ -40,6 +60,8 @@ header {
 	align-self: center;
 	text-align: left;
 	color: $main-green;
+	position: relative;
+	z-index: 5;
 }
 
 .intro_btn {
@@ -48,40 +70,72 @@ header {
 	grid-column-start: 1;
 	grid-column-end: 2;
 	align-self: start;
+	position: relative;
+	z-index: 5;
+	@media screen and (min-width: $md) and (max-width: $mde){
+		
+	} 
+	@media screen and (min-width: $lg) {
+		justify-self: left;
+	}
 }
 
 .nav_house {
-	grid-row-start: 3;
-	grid-row-end: 4;
-	grid-column-start: 1;
-	grid-column-end: 2;
-	align-self: end;
-	position: absolute;
 	z-index: 0;
-	left: 0px;
-	bottom: 0px;
-	width: 100vw;
-	max-width: 100%;
-	overflow: hidden;
-	.img_city {
-		position: relative;
-		left: -45%;
-		bottom: -50px;
-		width: 158%;
-		max-width: 158%;
-		height: auto;
+	@media screen and (min-width: $sm) and (max-width: $sme) {
+		position: absolute;
+		width: 100vw;
+		max-width: 100%;
+		left: 0px;
+		bottom: 0px;
+		overflow: hidden;
 	}
+	@media screen and (min-width: $md) {
+		overflow: hidden;
+		position: relative;
+		height: 100vh;
+		margin: 0 -40px -100vh -40px;
+		top: -100vh;
+		bottom: -100vh;
+	}
+	.img_city {
+		@media screen and (min-width: $sm) and (max-width: $sme) {
+			position: relative;
+			left: -45%;
+			bottom: -50px;
+			width: 158%;
+			max-width: 158%;
+			height: auto;
+		}
+		@media screen and (min-width: $md) and (max-width: $mde) {
+			position: absolute;
+			z-index: 5;
+			left: 0;
+			bottom: 0;
+			margin-bottom: -1px;
+			left: -10%;
+			width: 116%;
+			max-width: 116%;
+			max-height: 80vh;
+		}
+		
+		@media screen and (min-width: $lg) and (max-width: $lge) {
+			position: absolute;
+			z-index: 5;
+			left: 0;
+			bottom: 0;
+			margin-bottom: -1px;
+			left: -1px;
+			right: 100%;
+			width: 101%;
+			max-width: 101%;
+			max-height: 80vh;
+		}
 
+		
+	}
 }
 
-/* 
-img {
-		position: relative;
-		left: -178px;
-		height: 383px; 
-		width: auto;
-	}
-*/
 
 
 

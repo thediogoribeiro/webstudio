@@ -4,8 +4,11 @@ $mid: 740px;
 $wide: 1200px;
 
 $sm: 320px;
+$sme: 767px;
 $md: 768px;
+$mde: 1023px;
 $lg: 1024px;
+$lge: 1279px;
 $xl: 1280px;
 
 /* colours */
@@ -23,7 +26,7 @@ $grey: #f2f2f2;
 
 /* hide classes */
 .hide_sm {
-	@media screen and (min-width: $sm) and (max-width: $md) {
+	@media screen and (min-width: $sm) and (max-width: $sme) {
 		display: none;
 	}
 }
@@ -35,7 +38,7 @@ $grey: #f2f2f2;
 }
 
 
-@media screen and (min-width: $sm) and (max-width: $md) {
+@media screen and (min-width: $sm) and (max-width: $sme) {
 	.hide_lg {
 		display: block;
 	}

@@ -1,9 +1,21 @@
 .navbar_list {
-  padding-top: 3em;
-  background-color: #f2f2f2;
-
-  li {
-    display: inline;
+  @media screen and (min-width: $sm) and (max-width: $sme) {
+    display: none;
+  }
+  @media screen and (min-width: $md) {
+    background-color: #f2f2f2;
+    position: relative;
+    z-index: 1;
+    width: 90vw;
+    left: -40px;
+    padding: 23px 5vw;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-decoration: none;
+    li {
+      display: inline;
+    }
   }
 }
 
@@ -11,7 +23,7 @@
   @media screen and (min-width: $md) {
     display: none;
   }
-  @media screen and (min-width: $sm) and (max-width: $md) {
+  @media screen and (min-width: $sm) and (max-width: $sme) {
     display: grid;
     grid-template-rows: 80px;
     grid-template-columns: 1fr 1fr;
@@ -21,18 +33,18 @@
     top: 0px;
     z-index: 2;
     background-color: $grey;
-  }
-  .hamburger {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    align-self: center;
-    justify-self: end;
-    img {
-      height: 40px;
-      width: auto;
-      position: relative;
-      margin-right: 25px;
-      z-index: 10;
+    .hamburger {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      align-self: center;
+      justify-self: end;
+      img {
+        height: 40px;
+        width: auto;
+        position: relative;
+        margin-right: 25px;
+        z-index: 10;
+      }
     }
   }
 }
@@ -59,7 +71,6 @@
     position: relative;
     z-index: 10;
     margin: 20px 0 40px 0;
-    //left: 0px;
     text-align: center;
     height: 93px;
     width: auto;

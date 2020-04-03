@@ -4,29 +4,38 @@ body {
   margin: 0;
   font-family: sans-serif;
   font-weight: 300;
-  font-size: 16px;
   line-height: 1.8;
   min-height: 100vh;
-  @media (min-width: $narrow) {
+  @media (min-width: $sm) and (max-width: $sme) {
+    font-size: 16px;
+  };
+  @media (min-width: $md) and (max-width: $lge) {
     font-size: 18px;
   };
-  @media (min-width: $mid) {
-    font-size: 18px;
-  };
-  @media (min-width: $wide) {
+  @media (min-width: $xl) {
     font-size: 20px;
   };
 }
 
 header {
-  
+  .intro_btn {
+    @media (min-width: $sm) and (max-width: $sme) {
+      font-size: 20px;
+    };
+    @media (min-width: $md) and (max-width: $lge) {
+      font-size: 22px;
+    };
+    @media (min-width: $xl) {
+      font-size: 24px;
+    };
+  }
 }
 
 h1, h2, h3 {
   color: $text-color-1;
   font-weight: 600;
   margin-top: 2em;
-  margin-bottom:0.2em;
+  margin-bottom: 0.2em;
   line-height: 1;
 }
 
@@ -36,15 +45,15 @@ h1 {
   margin-bottom:0.2em;
   line-height: 1;
 
-  @media (min-width: $mid) {
+  @media (min-width: $md) and (max-width: $lge) {
     font-size: 5em;
   };
-  @media (min-width: $wide) {
+  @media (min-width: $xl) {
     font-size: 6em;
   };
 }
 
-p {
+p, a {
   margin-top: 1em;
   margin-bottom: 1em;
 }
