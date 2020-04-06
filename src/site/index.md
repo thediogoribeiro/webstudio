@@ -27,69 +27,77 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 
 ## SERVIÇOS
 
-<div class="services-col-1">
+<div class="services-col-1 green-shadow" id="services-col-1" onclick="openService('services-col-1','services-info-1')">
 <img class="service-1" src="/images/svg/pencil-ruler-solid.svg">
 
 ### Design Gráfico
 
-Logótipo
+<div class="services-info-1" id="services-info-1">
+- Logótipo
 <br>
-Cartões de Visita
+- Cartões de Visita
 <br>
-Flyers
+- Flyers
 <br>
-Desdobráveis
+- Desdobráveis
 <br>
-Poster
+- Poster
+</div>
 
 </div>
 
-<div class="services-col-2">
+<div class="services-col-2 green-shadow" id="services-col-2" onclick="openService('services-col-2','services-info-2')">
 <img class="service-2" src="/images/svg/object-group-regular.svg">
 
 ### Design Web
 
-Wireframe
+<div class="services-info-2" id="services-info-2">
+- Wireframe
 <br>
-Prototipagem
+- Prototipagem
 <br>
-UI/UX
+- UI/UX
 <br>
-Responsivo
+- Responsivo
+</div>
 
 </div>
 
-<div class="services-col-3">
+<div class="services-col-3 green-shadow" id="services-col-3" onclick="openService('services-col-3','services-info-3')">
 <img class="service-3" src="/images/svg/desktop-solid.svg">
 
 ### Website Customizado
 
-HTML
+<div class="services-info-3" id="services-info-3">
+- HTML
 <br>
-CSS
+- CSS
 <br>
-Bootstrap
+- Bootstrap
 <br>
-Javascript
+- Javascript
 <br>
-Node.js
+- Node.js
 <br>
-Website builders
+- Website builders
+</div>
 
 </div>
 
-<div class="services-col-4">
+<div class="services-col-4 green-shadow" id="services-col-4" onclick="openService('services-col-4','services-info-4')">
 <img class="service-4" src="/images/svg/bullseye-solid.svg">
 
 ### Marketing Digital
 
-Publicidade paga online (PPC)
+<div class="services-info-4" id="services-info-4">
+- Publicidade paga online (PPC)
 <br>
-Gestão de redes socias
+- Gestão de redes socias
 <br>
-Email marketing
+- Email marketing
 <br>
-SEO
+- SEO
+</div>
 
 </div>
 

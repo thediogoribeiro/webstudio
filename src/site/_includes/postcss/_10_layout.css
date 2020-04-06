@@ -40,10 +40,10 @@ header {
 
 #services {
   @media screen and (min-width: $sm) and (max-width: $sme) {
-    margin: 50px 20px 70px 20px;
+    margin: 50px 20px 80px 20px;
   }
   @media screen and (min-width: $md) and (max-width: $lge) {
-    margin: 70px 40px;
+    margin: 100px 40px;
   }
   @media screen and (min-width: $xl) {
 
@@ -55,7 +55,7 @@ footer {
     margin: 40px 0 80px 0;
   }
   @media screen and (min-width: $md) and (max-width: $lge) {
-    margin: 70px 0 120px 0;
+    margin: 80px 0 120px 0;
   }
   @media screen and (min-width: $xl) {
 

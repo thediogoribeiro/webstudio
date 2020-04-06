@@ -36,7 +36,6 @@ function showBurger(id1, id2) {
   }
 }
 
-
 function imgChange(){
   console.log("x")
   var x = document.getElementById('img_city');
@@ -47,7 +46,23 @@ function imgChange(){
   };
 }
 
+function openService(clas1, clas2) {
+  var parent = document.getElementById(clas1);
+  var child = document.getElementById(clas2);
+  //var newHei = document.getElementById(clas2).style.height;
 
+  if (child.style.display === "none") {
+    child.style.display = "block";
+    if (document.documentElement.clientWidth >= 768){
+      parent.style.height = "325px";
+    } else if (document.documentElement.clientWidth < 768){
+      parent.style.height = "300px";
+    };
+  } else {
+    parent.style.height = "125px";
+    child.style.display = "none";
+  };
+}
 
 
 
