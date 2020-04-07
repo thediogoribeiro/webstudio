@@ -5,12 +5,18 @@
 	grid-template-columns: 1fr 1fr;
 
 	h2 {
-		margin-top: 10px;
-		margin-bottom: 30px;
 		grid-row-start: 1;
 		grid-row-end: 2;
 		grid-column-start: 1;
 		grid-column-end: 3;
+		@media screen and (min-width: $sm) and (max-width: $sme) {
+			margin-top: 10px;
+			margin-bottom: 30px;
+		}
+		@media screen and (min-width: $md) and (max-width: $lge) {
+			margin-top: 20px;
+			margin-bottom: 40px;
+		}
 	}
 
 	.img_client-1 {
@@ -20,15 +26,21 @@
 		grid-column-end: 2;
 	}
 	img.img_client-1 {
-		max-width: 82%;
-		width: 100%;
-		max-width: 155px;
-		height: auto;
 		align-self: center;
 		justify-self: center;
+		height: auto;
+		@media screen and (min-width: $sm) and (max-width: $sme) {
+			width: 100%;
+			max-width: 120px;
+		}
+		@media screen and (min-width: $md) {
+			width: 100%;
+			max-width: 180px;
+		}
+
 	}
 
-	.img_client-2 {
+	.img_client-2, .img_client-21 {
 		grid-row-start: 2;
 		grid-row-end: 3;
 		grid-column-start: 2;
@@ -36,12 +48,19 @@
 		overflow: hidden;
 	}
 	img.img_client-2 {
-		max-width: 75%;
-		width: 100%;
-		max-width: 155px;
-		height: auto;
 		align-self: center;
 		justify-self: center;
+		height: auto;
+		width: 100%;
+		max-width: 300px;
+		
+	}
+	img.img_client-21 {
+		align-self: center;
+		justify-self: center;
+		height: auto;
+		width: 100%;
+		max-width: 110px;
 	}
 }
 

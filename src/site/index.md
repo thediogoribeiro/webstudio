@@ -107,8 +107,9 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 
 ## CLIENTES
 
-<img class="img_client-1" src="/images/clients/cll-white.png">
-<img class="img_client-2" src="/images/clients/cll-black.png">
+<img class="img_client-1" id="client-1" src="/images/clients/cll-color.png">
+<img class="img_client-2" id="client-2" src="/images/clients/congresso_da_saude_PNG.png">
+<img class="img_client-21" id="client-21" src="/images/clients/congresso_logo.png">
 
 </div>
 <!---------------------------------------------------------------------->

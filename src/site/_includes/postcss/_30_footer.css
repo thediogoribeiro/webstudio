@@ -1,4 +1,64 @@
 #footer {
+	@media screen and (min-width: $md) and (max-width: $mde) {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+	@media screen and (min-width: $lg) and (max-width: $lge) {
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+	} 
+
+	.footer-col-1 {
+		@media screen and (min-width: $md) and (max-width: $mde) {
+			grid-row-start: 1;
+			grid-row-end: 2;
+			grid-column-start: 1;
+			grid-column-end: 2;
+			align-self: start;
+		}
+		@media screen and (min-width: $lg) and (max-width: $lge) {
+			grid-row-start: 1;
+			grid-row-end: 2;
+			grid-column-start: 1;
+			grid-column-end: 2;
+			align-self: start;
+		}
+	}
+	.footer-col-2 {
+		@media screen and (min-width: $md) and (max-width: $mde) {
+			grid-row-start: 1;
+			grid-row-end: 2;
+			grid-column-start: 2;
+			grid-column-end: 3;
+			align-self: start;
+		}
+		@media screen and (min-width: $lg) and (max-width: $lge) {
+			grid-row-start: 1;
+			grid-row-end: 2;
+			grid-column-start: 3;
+			grid-column-end: 4;
+			align-self: start;
+		}
+	}
+	.footer-col-3 {
+		@media screen and (min-width: $md) and (max-width: $mde) {
+			grid-row-start: 2;
+			grid-row-end: 3;
+			grid-column-start: 1;
+			grid-column-end: 3;
+			align-self: start;
+		}
+		@media screen and (min-width: $lg) and (max-width: $lge) {
+			grid-row-start: 1;
+			grid-row-end: 2;
+			grid-column-start: 2;
+			grid-column-end: 3;
+			align-self: start;
+		}
+	}
+	
 	.footer_img-1, .footer_img-2 {
 		margin-right: 20px;
 	}

@@ -54,11 +54,11 @@ footer {
   @media screen and (min-width: $sm) and (max-width: $sme) {
     margin: 40px 0 80px 0;
   }
-  @media screen and (min-width: $md) and (max-width: $lge) {
-    margin: 80px 0 120px 0;
+  @media screen and (min-width: $md) and (max-width: $mde) {
+    margin: 40px 80px 10px 80px;
   }
-  @media screen and (min-width: $xl) {
-
+  @media screen and (min-width: $lg) {
+    margin: 40px 80px 80px 80px;
   }
 }
 

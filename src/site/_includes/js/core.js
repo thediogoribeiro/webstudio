@@ -37,12 +37,17 @@ function showBurger(id1, id2) {
 }
 
 function imgChange(){
-  console.log("x")
   var x = document.getElementById('img_city');
+  var y0 = document.getElementById('client-2');
+  var y1 = document.getElementById('client-21');
   if (document.documentElement.clientWidth >= 768){
-    x.src = "/images/house-desktop.png"
+    x.src = "/images/house-desktop.png";
+    y0.style.display = "block";
+    y1.style.display = "none";
   } else if (document.documentElement.clientWidth < 768){
-    x.src = "/images/house-mobile.png"
+    x.src = "/images/house-mobile.png";
+    y0.style.display = "none";
+    y1.style.display = "block";
   };
 }
 
