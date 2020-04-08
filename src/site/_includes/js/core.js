@@ -36,6 +36,7 @@ function showBurger(id1, id2) {
   }
 }
 
+// Header image selection
 function imgChange(){
   var x = document.getElementById('img_city');
   var y0 = document.getElementById('client-2');
@@ -55,6 +56,7 @@ function imgChange(){
   };
 }
 
+// Open services list
 function openService(clas1, clas2) {
   var parent = document.getElementById(clas1);
   var child = document.getElementById(clas2);

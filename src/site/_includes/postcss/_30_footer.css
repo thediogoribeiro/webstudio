@@ -66,9 +66,6 @@
 		height: auto;
 		width: 35px;
 	}
-	h3, p, a {
-		color: $main-green;
-	}
 	h3 {
 		margin: 60px 0 -5px 0;
 	}
@@ -76,3 +73,21 @@
 		margin: 0px 0 5px 0;
 	}
 }
+
+.body-landing {
+	#footer {
+		h3, p, a {
+			color: $main-green;
+		}
+	}
+}
+
+.body-quote {
+	#footer {
+		h3, p, a {
+			color: $dark-blue;
+		}
+	}
+}
+
+
