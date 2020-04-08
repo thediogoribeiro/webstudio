@@ -33,8 +33,11 @@ header {
   @media screen and (min-width: $md) and (max-width: $lge) {
     padding: 60px 40px;
   }
-  @media screen and (min-width: $xl) {
-
+  @media screen and (min-width: $xl) and (max-width: $xxl) {
+    padding: 80px 80px;
+  }
+  @media screen and (min-width: $xxl) {
+    padding: 100px 240px;
   }
 }
 
@@ -45,8 +48,11 @@ header {
   @media screen and (min-width: $md) and (max-width: $lge) {
     margin: 100px 40px;
   }
-  @media screen and (min-width: $xl) {
-
+  @media screen and (min-width: $xl) and (max-width: $xxl) {
+    margin: 100px 40px 120px 40px;
+  }
+  @media screen and (min-width: $xxl) {
+    padding: 120px 160px;
   }
 }
 
@@ -57,8 +63,14 @@ footer {
   @media screen and (min-width: $md) and (max-width: $mde) {
     margin: 40px 80px 10px 80px;
   }
-  @media screen and (min-width: $lg) {
+  @media screen and (min-width: $lg) and (max-width: $xl) {
     margin: 40px 80px 80px 80px;
+  }
+  @media screen and (min-width: $xl) and (max-width: $xxl) {
+    margin: 40px 160px 80px 160px;
+  }
+  @media screen and (min-width: $xxl) {
+    margin: 40px 320px 80px 320px;
   }
 }
 

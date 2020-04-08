@@ -3,6 +3,9 @@
 	display: grid;
 	grid-template-rows: 1fr 2.5fr;
 	grid-template-columns: 1fr 1fr;
+	@media screen and (min-width: $xl) {
+		margin-bottom: -40px
+	}
 
 	h2 {
 		grid-row-start: 1;
@@ -17,6 +20,10 @@
 			margin-top: 20px;
 			margin-bottom: 40px;
 		}
+		@media screen and (min-width: $xl) {
+			margin-top: 20px;
+			margin-bottom: 50px;
+		}
 	}
 
 	.img_client-1 {
@@ -24,6 +31,7 @@
 		grid-row-end: 3;
 		grid-column-start: 1;
 		grid-column-end: 2;
+		align-self: end;
 	}
 	img.img_client-1 {
 		align-self: center;
@@ -46,6 +54,7 @@
 		grid-column-start: 2;
 		grid-column-end: 3;
 		overflow: hidden;
+		align-self: end;
 	}
 	img.img_client-2 {
 		align-self: center;

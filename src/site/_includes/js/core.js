@@ -40,7 +40,7 @@ function imgChange(){
   var x = document.getElementById('img_city');
   var y0 = document.getElementById('client-2');
   var y1 = document.getElementById('client-21');
-  if (document.documentElement.clientWidth >= 768){
+  if (document.documentElement.clientWidth >= 768 && document.documentElement.clientWidth < 1280){
     x.src = "/images/house-desktop.png";
     y0.style.display = "block";
     y1.style.display = "none";
@@ -48,23 +48,30 @@ function imgChange(){
     x.src = "/images/house-mobile.png";
     y0.style.display = "none";
     y1.style.display = "block";
+  } else {
+    x.src = "/images/house-desktop-3.png";
+    y0.style.display = "block";
+    y1.style.display = "none";
   };
 }
 
 function openService(clas1, clas2) {
   var parent = document.getElementById(clas1);
   var child = document.getElementById(clas2);
-  //var newHei = document.getElementById(clas2).style.height;
 
   if (child.style.display === "none") {
     child.style.display = "block";
     if (document.documentElement.clientWidth >= 768){
-      parent.style.height = "325px";
+      parent.style.height = "340px";
     } else if (document.documentElement.clientWidth < 768){
       parent.style.height = "300px";
     };
   } else {
-    parent.style.height = "125px";
+    if (document.documentElement.clientWidth >= 1280){
+      parent.style.height = "140px";
+    } else if (document.documentElement.clientWidth < 1280){
+      parent.style.height = "125px";
+    };
     child.style.display = "none";
   };
 }

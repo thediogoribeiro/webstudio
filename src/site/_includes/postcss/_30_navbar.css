@@ -1,21 +1,27 @@
 .navbar_list {
+  grid-template-rows: 1fr;
+  grid-template-columns: 40% 1fr 1fr 1fr 1fr;
+  position: relative;
+  z-index: 1;
+  width: 90vw;
+  padding: 23px 5vw;
+  background-color: #f2f2f2;
+  text-decoration: none;
   @media screen and (min-width: $sm) and (max-width: $sme) {
     display: none;
   }
   @media screen and (min-width: $md) {
-    background-color: #f2f2f2;
-    position: relative;
-    z-index: 1;
-    width: 90vw;
-    left: -40px;
-    padding: 23px 5vw;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    text-decoration: none;
-    li {
-      display: inline;
-    }
+  }
+  @media screen and (min-width: $md) and (max-width: $lge) {
+    left: -40px;
+  }
+  @media screen and (min-width: $xl) {
+    left: -80px;
+  }
+
+  li {
+    display: inline;
   }
 }
 

@@ -6,75 +6,105 @@ header {
 		height: 93vh;
 	}
 	@media screen (min-width: $xl) {
-		height: 100vh;
+		//height: 93vh;
 	}
 }
 
 .header_container {
 	@media screen and (min-width: $sm) and (max-width: $sme) {
 		height: 93vh;
+		grid-template-rows: 30% 36% 34%;
 	}
 	@media screen and (min-width: $md) and (max-width: $lge) {
 		height: 93vh;
+		grid-template-rows: 30% 36% 34%;
 	}
 	@media screen and (min-width: $xl) {
 		height: 100vh;
+		grid-template-rows: 1.5fr 0.5fr 1fr 1fr;
+	}
+	@media screen and (min-width: $xxl) {
+		padding-left: 60px;
 	}
 	position: relative;
 	z-index: 1; 
 	margin-top: -80px;
 	display: grid;
-	grid-template-rows: 30% 36% 34%;
 	grid-template-columns: 1fr;
 }
 
 .title {
-	grid-row-start: 1;
-	grid-row-end: 2;
 	grid-column-start: 1;
 	grid-column-end: 2;
-	align-self: end;
 	text-align: left;
 	color: $main-green;
 	position: relative;
 	z-index: 5;
+	@media screen and (min-width: $sm) and (max-width: $lge) {
+		grid-row-start: 1;
+		grid-row-end: 2;
+		align-self: end;
+	}
+	@media screen and (min-width: $xl) {
+		grid-row-start: 1;
+		grid-row-end: 2;
+		align-self: end;
+	}
 }
 
 .subtitle {
-	grid-row-start: 2;
-	grid-row-end: 3;
 	grid-column-start: 1;
 	grid-column-end: 2;
-	align-self: start;
 	text-align: left;
 	color: $main-green;
 	position: relative;
 	z-index: 5;
+	@media screen and (min-width: $sm) and (max-width: $lge) {
+		grid-row-start: 2;
+		grid-row-end: 3;
+		align-self: start;
+	}
+	@media screen and (min-width: $xl) {
+		grid-row-start: 2;
+		grid-row-end: 3;
+		align-self: start;
+	}
 }
 
 .intro_text {
-	grid-row-start: 2;
-	grid-row-end: 3;
 	grid-column-start: 1;
 	grid-column-end: 2;
-	align-self: center;
 	text-align: left;
 	color: $main-green;
 	position: relative;
 	z-index: 5;
+	@media screen and (min-width: $sm) and (max-width: $lge) {
+		grid-row-start: 2;
+		grid-row-end: 3;
+		align-self: center;
+	}
+	@media screen and (min-width: $xl) {
+		grid-row-start: 3;
+		grid-row-end: 4;
+		align-self: start;
+	}
 }
 
 .intro_btn {
-	grid-row-start: 3;
-	grid-row-end: 4;
 	grid-column-start: 1;
 	grid-column-end: 2;
-	align-self: start;
 	position: relative;
 	z-index: 5;
-	@media screen and (min-width: $md) and (max-width: $mde){
-		
+	@media screen and (min-width: $sm) and (max-width: $lge) {
+		grid-row-start: 3;
+		grid-row-end: 4;
+		align-self: start;
 	} 
+	@media screen and (min-width: $xl) {
+		grid-row-start: 4;
+		grid-row-end: 5;
+		align-self: start;
+	}
 	@media screen and (min-width: $lg) {
 		justify-self: left;
 	}
@@ -90,7 +120,7 @@ header {
 		bottom: 0px;
 		overflow: hidden;
 	}
-	@media screen and (min-width: $md) {
+	@media screen and (min-width: $md) and (max-width: $lge) {
 		overflow: hidden;
 		position: relative;
 		height: 100vh;
@@ -98,6 +128,15 @@ header {
 		top: -100vh;
 		bottom: -100vh;
 	}
+	@media screen and (min-width: $xl) {
+		overflow: hidden;
+		position: relative;
+		height: 100vh;
+		margin: 0 -23px -100vh -80px;
+		top: -100vh;
+		bottom: -100vh;
+	}
+
 	.img_city {
 		@media screen and (min-width: $sm) and (max-width: $sme) {
 			position: relative;
@@ -128,10 +167,21 @@ header {
 			left: -1px;
 			right: 100%;
 			width: 101%;
+			height: auto;
 			max-width: 101%;
 			max-height: 80vh;
 		}
 
+		@media screen and (min-width: $xl) {
+			position: absolute;
+			z-index: 5;
+			bottom: 0;
+			margin-bottom: -1px;
+			right: -5px;
+			width: auto;
+			max-width: 101%;
+			max-height: 103vh;
+		}
 		
 	}
 }

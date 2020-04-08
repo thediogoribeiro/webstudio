@@ -4,11 +4,11 @@
 		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
 	}
-	@media screen and (min-width: $lg) and (max-width: $lge) {
+	@media screen and (min-width: $lg) {
 		display: grid;
 		grid-template-rows: 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
-	} 
+	}
 
 	.footer-col-1 {
 		@media screen and (min-width: $md) and (max-width: $mde) {
@@ -18,7 +18,7 @@
 			grid-column-end: 2;
 			align-self: start;
 		}
-		@media screen and (min-width: $lg) and (max-width: $lge) {
+		@media screen and (min-width: $lg) {
 			grid-row-start: 1;
 			grid-row-end: 2;
 			grid-column-start: 1;
@@ -34,7 +34,7 @@
 			grid-column-end: 3;
 			align-self: start;
 		}
-		@media screen and (min-width: $lg) and (max-width: $lge) {
+		@media screen and (min-width: $lg) {
 			grid-row-start: 1;
 			grid-row-end: 2;
 			grid-column-start: 3;
@@ -50,7 +50,7 @@
 			grid-column-end: 3;
 			align-self: start;
 		}
-		@media screen and (min-width: $lg) and (max-width: $lge) {
+		@media screen and (min-width: $lg) {
 			grid-row-start: 1;
 			grid-row-end: 2;
 			grid-column-start: 2;
