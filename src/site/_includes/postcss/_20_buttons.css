@@ -11,8 +11,9 @@
 .quote_btn {
 	background-color: $dark-blue;
 	color: $grey;
-	padding: 12px 15px;
+	padding: 10px 30px;
 	text-align: center;
+	font-weight: bold;
 	border: 1.25px solid $dark-blue;
 	border-radius: 5px;
 }

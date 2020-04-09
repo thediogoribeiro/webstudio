@@ -21,7 +21,7 @@ header {
 	}
 	@media screen and (min-width: $xl) {
 		height: 100vh;
-		grid-template-rows: 1.5fr 0.5fr 1fr 1fr;
+		grid-template-rows: 1.5fr 0.5fr 0.5fr 1.5fr;
 	}
 	@media screen and (min-width: $xxl) {
 		padding-left: 60px;
@@ -49,6 +49,7 @@ header {
 		grid-row-start: 1;
 		grid-row-end: 2;
 		align-self: end;
+		margin-top: 30px;
 	}
 }
 
@@ -103,7 +104,7 @@ header {
 	@media screen and (min-width: $xl) {
 		grid-row-start: 4;
 		grid-row-end: 5;
-		align-self: start;
+		align-self: center;
 	}
 	@media screen and (min-width: $lg) {
 		justify-self: left;

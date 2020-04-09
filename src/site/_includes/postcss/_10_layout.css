@@ -45,7 +45,7 @@ header {
   }
 }
 
-#about, #clients, #talk {
+#about, #clients, #talk, #quote {
   @media screen and (min-width: $sm) and (max-width: $sme) {
     padding: 40px 20px;
   }

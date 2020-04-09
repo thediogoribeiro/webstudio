@@ -12,6 +12,7 @@
 @import '_40_services.css';
 @import '_40_clients.css';
 @import '_40_talk.css';
+@import '_40_quote.css';
 
 .subtitle {
   font-size: 1.2em;

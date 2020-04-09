@@ -1,6 +1,7 @@
 ---
 layout: layouts/quote.njk
 ---
+<div id="quote">
 
 ## PEDIR ORÇAMENTO
 
@@ -8,50 +9,53 @@ layout: layouts/quote.njk
 
 <div class="questions-1">
 
-<p>Identidade digital</p>
-<button></button>
+Identidade digital
+<label class="switch"><input type="checkbox"><span class="slider round"></span></label>
 
-<p>Flyers, cartões de visita, desdobráveis, etc.</p>
-<button></button>
+<p style="width:70%;">Flyers, cartões de visita, desdobráveis, etc.</p>
+<label class="switch moveup"><input type="checkbox"><span class="slider round"></span></label>
 
-<p>Esboço de um website</p>
-<button></button>
+Esboço de um website
+<label class="switch"><input type="checkbox"><span class="slider round"></span></label>
 
-<p>Montar um website</p>
-<button></button>
+Montar um website
+<label class="switch"><input type="checkbox"><span class="slider round"></span></label>
 
-<p>Loja online</p>
-<button></button>
+Loja online
+<label class="switch"><input type="checkbox"><span class="slider round"></span></label>
 
 </div>
 
 <div class="questions-2">
 
-<p>Estratégia de marketing</p>
-<button></button>
+Estratégia de marketing
+<label class="switch"><input type="checkbox"><span class="slider round"></span></label>
 
-<p>Gestão de redes sociais</p>
-<button></button>
+Gestão de redes sociais
+<label class="switch"><input type="checkbox"><span class="slider round"></span></label>
 
-<p>Publicidade paga</p>
-<button></button>
+Publicidade paga
+<label class="switch"><input type="checkbox"><span class="slider round"></span></label>
 
-<p>Optimização google</p>
-<button></button>
+Optimização google
+<label class="switch"><input type="checkbox"><span class="slider round"></span></label>
 <p class="reduce">(SEO, SEM)</p>
 
 </div>
 
 <div class="personal_info">
 
-<p>Nome</p>
-<form></form>
+<p class="input_text">Nome</p>
+<input class="short_input">
 
-<p>Email</p>
-<form></form>
+<p class="input_text">Email</p>
+<input class="short_input">
 
-<p>Observações</p>
-<form></form>
+<p class="input_text">Observações</p>
+<input class="long_input">
+
+<button class="quote_btn">ENVIAR</button>
 
 </div>
 
+</div>

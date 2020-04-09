@@ -2,11 +2,12 @@
   grid-template-rows: 1fr;
   grid-template-columns: 40% 1fr 1fr 1fr 1fr;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   width: 90vw;
   padding: 23px 5vw;
   background-color: #f2f2f2;
   text-decoration: none;
+  border-bottom: 3px solid $dark-blue;
   @media screen and (min-width: $sm) and (max-width: $sme) {
     display: none;
   }
@@ -26,6 +27,7 @@
 }
 
 .navbar_icon {
+  border-bottom: 3px solid $dark-blue;
   @media screen and (min-width: $md) {
     display: none;
   }

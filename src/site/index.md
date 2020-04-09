@@ -121,8 +121,8 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 
 Se tiver alguma dúvida ou não souber concretamente o que precisa, pode entrar em contacto connosco através dos seguintes canais:
 
-<p class="talk_text-1"><img class="talk_img-1" src="/images/svg/envelope-regular.svg">info@zetazone.com</p>
-<p class="talk_text-2"><img class="talk_img-2" src="/images/svg/whatsapp-brands.svg">+351 911 999 888</p>
+<p class="talk_text-1"><a href="mailto:info@zetazone.com"><img class="talk_img-1" src="/images/svg/envelope-regular.svg">info@zetazone.com</p></a>
+<p class="talk_text-2"><a href="https://api.whatsapp.com/send?phone=+351911999888"><img class="talk_img-2" src="/images/svg/whatsapp-brands.svg">+351 911 999 888</p></a>
 
 </div>
 
