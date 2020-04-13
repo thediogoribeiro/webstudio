@@ -54,7 +54,7 @@ Optimização google
 <p class="input_text">Observações</p>
 <input class="long_input">
 
-<button class="quote_btn">ENVIAR</button>
+<div class="input_btn"><button class="quote_btn">ENVIAR</button></div>
 
 </div>
 

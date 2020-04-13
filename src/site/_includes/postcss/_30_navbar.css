@@ -1,6 +1,5 @@
 .navbar_list {
   grid-template-rows: 1fr;
-  grid-template-columns: 40% 1fr 1fr 1fr 1fr;
   position: relative;
   z-index: 10;
   width: 90vw;
@@ -19,6 +18,15 @@
   }
   @media screen and (min-width: $xl) {
     left: -80px;
+  }
+  @media screen and (min-width: $md) and (max-width: $mde) {
+    grid-template-columns: 12% 1fr 1fr 1fr 1fr;
+  }
+  @media screen and (min-width: $lg) and (max-width: $lge){
+    grid-template-columns: 30% 1fr 1fr 1fr 1fr;
+  }
+  @media screen and (min-width: $xl) {
+    grid-template-columns: 40% 1fr 1fr 1fr 1fr;
   }
 
   li {

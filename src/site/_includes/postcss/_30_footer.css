@@ -62,7 +62,7 @@
 	.footer_img-1, .footer_img-2 {
 		margin-right: 20px;
 	}
-	img {
+	svg {
 		height: auto;
 		width: 35px;
 	}
@@ -79,6 +79,9 @@
 		h3, p, a {
 			color: $main-green;
 		}
+		svg {
+			fill: #04d976;
+		}
 	}
 }
 
@@ -86,6 +89,9 @@
 	#footer {
 		h3, p, a {
 			color: $dark-blue;
+		}
+		path {
+			fill: #1a2040;
 		}
 	}
 }
