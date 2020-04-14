@@ -1,6 +1,5 @@
 @import '_00_fontface.css';
 @import '_00_variables.css';
-@import '_00_syntax.css';
 @import '_10_layout.css';
 @import '_10_typography.css';
 @import '_20_buttons.css';
@@ -13,23 +12,5 @@
 @import '_40_clients.css';
 @import '_40_talk.css';
 @import '_40_quote.css';
-
-.subtitle {
-  font-size: 1.2em;
-  margin-top: 1em;
-  margin-bottom: 5em;
-}
-
-.nakedLink a:link,
-.nakedLink a:visited,
-.nakedLink a:hover,
-.nakedLink a:focus {
-  border-bottom-style:none;
-}
-
-.date {
-  font-size: 0.8em;
-  font-style: italic;
-}
 
 

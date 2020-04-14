@@ -19,7 +19,7 @@
 		display: grid;
 		grid-template-rows: 175px 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-column-gap: 80px;
+		grid-column-gap: 60px;
 	}
 	p {
 		text-align: left;

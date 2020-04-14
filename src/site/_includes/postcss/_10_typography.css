@@ -55,4 +55,17 @@ ul, ol {
   padding-left: 1em;
 }
 
+header {
+  a {
+    text-decoration: none !important;
+  }
+}
+
+#talk, #footer {
+  a {
+    @media screen and (min-width: $lg) {
+      text-decoration: none;
+    }
+  }
+}
 

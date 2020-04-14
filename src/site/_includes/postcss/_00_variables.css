@@ -51,11 +51,35 @@ $grey: #f2f2f2;
 	}
 }
 
+.header_btn:hover, .header_btn:focus, .services-col-1:hover, .services-col-1:focus, .services-col-2:hover, .services-col-2:focus, .services-col-3:hover, .services-col-3:focus, .services-col-4:hover, .services-col-4:focus {
+  box-shadow: 0px 5px 4px $grey;
+}
 
+#talk {
+	.talk_text-1, .talk_text-2 {
+		a:focus, a:hover {
+			@media screen and (min-width: $sm) and (max-width: $mde) {
+				text-decoration: underline;
+			}
+			@media screen and (min-width: $lg) {
+				text-decoration: underline;
+				text-decoration-color: $dark-blue;
+			}
+		}
+	}
+}
 
-
-
-
+#footer {
+	a:focus, a:hover {
+		@media screen and (min-width: $sm) and (max-width: $mde) {
+			text-decoration: underline;
+		}
+		@media screen and (min-width: $lg) {
+			text-decoration: underline;
+			text-decoration-color: $neon-green;
+		}
+	}
+}
 
 
 

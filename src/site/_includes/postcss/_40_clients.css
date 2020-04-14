@@ -4,7 +4,7 @@
 	grid-template-rows: 1fr 2.5fr;
 	grid-template-columns: 1fr 1fr;
 	@media screen and (min-width: $xl) {
-		margin-bottom: -40px
+		margin-bottom: -40px;
 	}
 
 	h2 {
@@ -45,10 +45,9 @@
 			width: 100%;
 			max-width: 180px;
 		}
-
 	}
 
-	.img_client-2, .img_client-21 {
+	.img_client-2 {
 		grid-row-start: 2;
 		grid-row-end: 3;
 		grid-column-start: 2;
@@ -61,15 +60,12 @@
 		justify-self: center;
 		height: auto;
 		width: 100%;
-		max-width: 300px;
-		
-	}
-	img.img_client-21 {
-		align-self: center;
-		justify-self: center;
-		height: auto;
-		width: 100%;
-		max-width: 110px;
+		@media screen and (min-width: $sm) and (max-width: $sme) {
+			max-width: 225px;	
+		}
+		@media screen and (min-width: $md) {
+			max-width: 300px;
+		}	
 	}
 }
 
