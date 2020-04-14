@@ -60,8 +60,10 @@ function imgChange(){
 function openService(clas1, clas2) {
   var parent = document.getElementById(clas1);
   var child = document.getElementById(clas2);
+  console.log(clas1,clas2);
 
   if (child.style.display === "none") {
+    console.log("none");
     child.style.display = "block";
     if (document.documentElement.clientWidth >= 768){
       parent.style.height = "340px";
@@ -69,6 +71,7 @@ function openService(clas1, clas2) {
       parent.style.height = "300px";
     };
   } else {
+    console.log("some");
     if (document.documentElement.clientWidth >= 1280){
       parent.style.height = "140px";
     } else if (document.documentElement.clientWidth < 1280){
@@ -100,6 +103,23 @@ function sendQuote(){
     body += "\n\nCampos: "+campos;
     body = encodeURIComponent(body);
     window.open('mailto:info@zetazone.com?subject=Orçamento_Zeta_Zone&body='+body);
+    /*
+    var nome = document.getElementById("form_nome").value;
+    var email = document.getElementById("form_email").value;
+    var obs = document.getElementById("form_obs").value;
+    const options = {
+      method: 'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({nome:nome, email:email, obs:obs, campos:campos})
+    };
+    fetch('/sendEmail', options).then(function(res) {
+      return res.json()
+    }).then(function(data) {
+      if(data.res=="ok") alert("Enviado com sucesso");
+      else alert("Erro ao enviar email, entre em contato de outra forma");
+    }).catch(function(error) {
+      console.error(error)
+    })*/
   }else{
     alert("Nome e Email obrigatório");
   }
