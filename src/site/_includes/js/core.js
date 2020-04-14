@@ -78,6 +78,33 @@ function openService(clas1, clas2) {
   };
 }
 
+//send form using malito
+function sendQuote(){
+  var campos = [];
+
+  if(document.getElementById("cb1").checked == true) campos.push("Identidade digital");
+  if(document.getElementById("cb2").checked == true) campos.push("Flyers, cartões de visita, desdobráveis, etc.");
+  if(document.getElementById("cb3").checked == true) campos.push("Esboço de um website");
+  if(document.getElementById("cb4").checked == true) campos.push("Montar um website");
+  if(document.getElementById("cb5").checked == true) campos.push("Loja online");
+  if(document.getElementById("cb6").checked == true) campos.push("Estratégia de marketing");
+  if(document.getElementById("cb7").checked == true) campos.push("Gestão de redes sociais");
+  if(document.getElementById("cb8").checked == true) campos.push("Publicidade paga");
+  if(document.getElementById("cb9").checked == true) campos.push("Optimização google");
+
+  if (document.getElementById("form_email").value != "" && document.getElementById("form_nome").value != ""){
+    var body = "\nNome: " + document.getElementById("form_nome").value;
+    body += "\nEmail: " + document.getElementById("form_email").value;
+    body += "\n\nVenho por este meio pedir orçamento para um website";
+    body += "\n\nOBS: " + document.getElementById("form_obs").value;
+    body += "\n\nCampos: "+campos;
+    body = encodeURIComponent(body);
+    window.open('mailto:info@zetazone.com?subject=Orçamento_Zeta_Zone&body='+body);
+  }else{
+    alert("Nome e Email obrigatório");
+  }
+}
+
 
 
 
