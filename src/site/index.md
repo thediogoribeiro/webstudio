@@ -27,12 +27,12 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 
 ## SERVIÇOS
 
-<div class="services-col-1 green-shadow" id="services-col-1" onclick="openService('services-col-1','services-info-1',0)">
+<div class="services-col-1 green-shadow" id="services-col-1" onclick="openService('services-col-1','services-info-1')">
 <img class="service-1" src="/images/svg/pencil-ruler-solid.svg">
 
 ### Design Gráfico
 
-<div class="services-info-1" id="services-info-1">
+<div class="services-info-1" id="services-info-1" style="display: none;">
 - Logótipo
 <br>
 - Cartões de Visita
@@ -46,12 +46,12 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 
 </div>
 
-<div class="services-col-2 green-shadow" id="services-col-2" onclick="openService('services-col-2','services-info-2',1)">
+<div class="services-col-2 green-shadow" id="services-col-2" onclick="openService('services-col-2','services-info-2')">
 <img class="service-2" src="/images/svg/object-group-regular.svg">
 
 ### Design Web
 
-<div class="services-info-2" id="services-info-2">
+<div class="services-info-2" id="services-info-2" style="display: none;">
 - Wireframe
 <br>
 - Prototipagem
@@ -63,12 +63,12 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 
 </div>
 
-<div class="services-col-3 green-shadow" id="services-col-3" onclick="openService('services-col-3','services-info-3',2)">
+<div class="services-col-3 green-shadow" id="services-col-3" onclick="openService('services-col-3','services-info-3')">
 <img class="service-3" src="/images/svg/desktop-solid.svg">
 
 ### Website Customizado
 
-<div class="services-info-3" id="services-info-3">
+<div class="services-info-3" id="services-info-3" style="display: none;">
 - HTML
 <br>
 - CSS
@@ -84,12 +84,12 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 
 </div>
 
-<div class="services-col-4 green-shadow" id="services-col-4" onclick="openService('services-col-4','services-info-4',3)">
+<div class="services-col-4 green-shadow" id="services-col-4" onclick="openService('services-col-4','services-info-4')">
 <img class="service-4" src="/images/svg/bullseye-solid.svg">
 
 ### Marketing Digital
 
-<div class="services-info-4" id="services-info-4">
+<div class="services-info-4" id="services-info-4" style="display: none;">
 - Publicidade paga online (PPC)
 <br>
 - Gestão de redes socias
