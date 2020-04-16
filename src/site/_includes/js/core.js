@@ -1,3 +1,4 @@
+var services = [false, false, false, false];
 // simple button click event handler
 function btnHandler(selector, callback) {
   var btn = document.querySelector(selector);
@@ -77,13 +78,11 @@ function imgChange(){
 }
 
 // Open services list
-function openService(clas1, clas2) {
+function openService(clas1, clas2,s) {
   var parent = document.getElementById(clas1);
   var child = document.getElementById(clas2);
-  console.log(clas1,clas2);
-
-  if (child.style.display === "none") {
-    console.log("none");
+  if (!services[s]) {
+    services[s]=true;
     child.style.display = "block";
     if (document.documentElement.clientWidth >= 768){
       parent.style.height = "340px";
@@ -91,7 +90,7 @@ function openService(clas1, clas2) {
       parent.style.height = "300px";
     };
   } else {
-    console.log("some");
+    services[s]=false;
     if (document.documentElement.clientWidth >= 1280){
       parent.style.height = "140px";
     } else if (document.documentElement.clientWidth < 1280){
