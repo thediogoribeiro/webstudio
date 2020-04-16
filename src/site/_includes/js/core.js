@@ -60,8 +60,10 @@ function imgChange(){
 function openService(clas1, clas2) {
   var parent = document.getElementById(clas1);
   var child = document.getElementById(clas2);
+  console.log(clas1,clas2);
 
   if (child.style.display === "none") {
+    console.log("none");
     child.style.display = "block";
     if (document.documentElement.clientWidth >= 768){
       parent.style.height = "340px";
@@ -69,6 +71,7 @@ function openService(clas1, clas2) {
       parent.style.height = "300px";
     };
   } else {
+    console.log("some");
     if (document.documentElement.clientWidth >= 1280){
       parent.style.height = "140px";
     } else if (document.documentElement.clientWidth < 1280){
@@ -76,6 +79,50 @@ function openService(clas1, clas2) {
     };
     child.style.display = "none";
   };
+}
+
+//send form using malito
+function sendQuote(){
+  var campos = [];
+
+  if(document.getElementById("cb1").checked == true) campos.push("Identidade digital");
+  if(document.getElementById("cb2").checked == true) campos.push("Flyers, cartões de visita, desdobráveis, etc.");
+  if(document.getElementById("cb3").checked == true) campos.push("Esboço de um website");
+  if(document.getElementById("cb4").checked == true) campos.push("Montar um website");
+  if(document.getElementById("cb5").checked == true) campos.push("Loja online");
+  if(document.getElementById("cb6").checked == true) campos.push("Estratégia de marketing");
+  if(document.getElementById("cb7").checked == true) campos.push("Gestão de redes sociais");
+  if(document.getElementById("cb8").checked == true) campos.push("Publicidade paga");
+  if(document.getElementById("cb9").checked == true) campos.push("Optimização google");
+
+  if (document.getElementById("form_email").value != "" && document.getElementById("form_nome").value != ""){
+    var body = "\nNome: " + document.getElementById("form_nome").value;
+    body += "\nEmail: " + document.getElementById("form_email").value;
+    body += "\n\nVenho por este meio pedir orçamento para um website";
+    body += "\n\nOBS: " + document.getElementById("form_obs").value;
+    body += "\n\nCampos: "+campos;
+    body = encodeURIComponent(body);
+    window.open('mailto:info@zetazone.com?subject=Orçamento_Zeta_Zone&body='+body);
+    /*
+    var nome = document.getElementById("form_nome").value;
+    var email = document.getElementById("form_email").value;
+    var obs = document.getElementById("form_obs").value;
+    const options = {
+      method: 'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({nome:nome, email:email, obs:obs, campos:campos})
+    };
+    fetch('/sendEmail', options).then(function(res) {
+      return res.json()
+    }).then(function(data) {
+      if(data.res=="ok") alert("Enviado com sucesso");
+      else alert("Erro ao enviar email, entre em contato de outra forma");
+    }).catch(function(error) {
+      console.error(error)
+    })*/
+  }else{
+    alert("Nome e Email obrigatório");
+  }
 }
 
 
