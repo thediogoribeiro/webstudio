@@ -74,12 +74,28 @@ $grey: #f2f2f2;
 		@media screen and (min-width: $sm) and (max-width: $mde) {
 			text-decoration: underline;
 		}
-		@media screen and (min-width: $lg) {
-			text-decoration: underline;
-			text-decoration-color: $neon-green;
+	}
+}
+
+#body-landing {
+	#footer {
+		a:focus, a:hover {
+			@media screen and (min-width: $lg) {
+				text-decoration: underline;
+				text-decoration-color: $neon-green;
+			}
 		}
 	}
 }
 
-
+#body-quote {
+	#footer {
+		a:focus, a:hover {
+			@media screen and (min-width: $lg) {
+				text-decoration: underline;
+				text-decoration-color: $dark-blue;
+			}
+		}
+	}
+}
 

@@ -14,25 +14,6 @@
 }
 */
 
-body.body-landing {
-  text-align: center;
-  background-color: $page-color-2;
-  margin: 0;
-  font-family: sans-serif;
-  font-weight: 300;
-  line-height: 1.8;
-}
-
-body.body-quote {
-  text-align: center;
-  background-color: $page-color-1;
-  margin: 0;
-  font-family: sans-serif;
-  font-weight: 300;
-  line-height: 1.8;
-  color: $dark-blue;
-}
-
 header {
   @media screen and (min-width: $sm) and (max-width: $sme) {
     padding: 0 25px 0 25px;

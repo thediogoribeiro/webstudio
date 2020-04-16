@@ -12,6 +12,8 @@ function btnHandler(selector, callback) {
 function showBurger(id1, id2) {
   var x = document.getElementById(id1);
   var y = document.getElementById(id2);
+  var head = document.getElementById("header_container");
+  var house = document.getElementById("nav_house");
   var about = document.getElementById("about");
   var services = document.getElementById("services");
   var clients = document.getElementById("clients");
@@ -20,6 +22,8 @@ function showBurger(id1, id2) {
   if (x.style.display === "block") {
     x.style.display = "none";
     y.src = "/images/svg/bars-solid.svg";
+    head.style.display = "grid";
+    house.style.display = "block";
     about.style.display = "block";
     services.style.display = "grid";
     clients.style.display = "grid";
@@ -28,6 +32,8 @@ function showBurger(id1, id2) {
   } else {
     x.style.display = "block";
     y.src = "/images/svg/times-solid.svg"
+    head.style.display = "none";
+    house.style.display = "none";
     about.style.display = "none";
     services.style.display = "none";
     clients.style.display = "none";
@@ -39,6 +45,8 @@ function showBurger(id1, id2) {
 function navbarGo() {
   var navbar = document.getElementById("navbar_links");
   var icon = document.getElementById("img_icon");
+  var head = document.getElementById("header_container");
+  var house = document.getElementById("nav_house");
   var about = document.getElementById("about");
   var services = document.getElementById("services");
   var clients = document.getElementById("clients");
@@ -46,6 +54,8 @@ function navbarGo() {
   var footer = document.getElementById("footer")
   navbar.style.display = "none";
   icon.src = "/images/svg/bars-solid.svg";
+  head.style.display = "grid";
+  house.style.display = "block";
   about.style.display = "block";
   services.style.display = "grid";
   clients.style.display = "grid";
