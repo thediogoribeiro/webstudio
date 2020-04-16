@@ -27,7 +27,7 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 
 ## SERVIÇOS
 
-<div class="services-col-1 green-shadow" id="services-col-1" onclick="openService('services-col-1','services-info-1')">
+<div class="services-col-1 green-shadow" id="services-col-1" onclick="openService('services-col-1','services-info-1',0)">
 <img class="service-1" src="/images/svg/pencil-ruler-solid.svg">
 
 ### Design Gráfico
@@ -46,7 +46,7 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 
 </div>
 
-<div class="services-col-2 green-shadow" id="services-col-2" onclick="openService('services-col-2','services-info-2')">
+<div class="services-col-2 green-shadow" id="services-col-2" onclick="openService('services-col-2','services-info-2',1)">
 <img class="service-2" src="/images/svg/object-group-regular.svg">
 
 ### Design Web
@@ -63,7 +63,7 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 
 </div>
 
-<div class="services-col-3 green-shadow" id="services-col-3" onclick="openService('services-col-3','services-info-3')">
+<div class="services-col-3 green-shadow" id="services-col-3" onclick="openService('services-col-3','services-info-3',2)">
 <img class="service-3" src="/images/svg/desktop-solid.svg">
 
 ### Website Customizado
@@ -84,7 +84,7 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 
 </div>
 
-<div class="services-col-4 green-shadow" id="services-col-4" onclick="openService('services-col-4','services-info-4')">
+<div class="services-col-4 green-shadow" id="services-col-4" onclick="openService('services-col-4','services-info-4',3)">
 <img class="service-4" src="/images/svg/bullseye-solid.svg">
 
 ### Marketing Digital
