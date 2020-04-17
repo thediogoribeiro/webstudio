@@ -37,7 +37,7 @@ header {
     padding: 80px 80px;
   }
   @media screen and (min-width: $xxl) {
-    padding: 100px 240px;
+    padding: 80px 120px;
   }
 }
 
@@ -52,7 +52,7 @@ header {
     margin: 100px 40px 120px 40px;
   }
   @media screen and (min-width: $xxl) {
-    padding: 120px 160px;
+    padding: 100px 80px;
   }
 }
 
@@ -70,7 +70,7 @@ footer {
     margin: 40px 160px 80px 160px;
   }
   @media screen and (min-width: $xxl) {
-    margin: 40px 320px 80px 320px;
+    margin: 40px 160px 80px 160px;
   }
 }
 

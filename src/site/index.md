@@ -28,30 +28,11 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 ## SERVIÇOS
 
 <div class="services-col-1 green-shadow" id="services-col-1" onclick="openService('services-col-1','services-info-1',0)">
-<img class="service-1" src="/images/svg/pencil-ruler-solid.svg">
-
-### Design Gráfico
-
-<div class="services-info-1" id="services-info-1">
-- Logótipo
-<br>
-- Cartões de Visita
-<br>
-- Flyers
-<br>
-- Desdobráveis
-<br>
-- Poster
-</div>
-
-</div>
-
-<div class="services-col-2 green-shadow" id="services-col-2" onclick="openService('services-col-2','services-info-2',1)">
-<img class="service-2" src="/images/svg/object-group-regular.svg">
+<img class="service-1" src="/images/svg/object-group-regular.svg">
 
 ### Design Web
 
-<div class="services-info-2" id="services-info-2">
+<div class="services-info-1" id="services-info-1">
 - Wireframe
 <br>
 - Prototipagem
@@ -80,6 +61,25 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 - Node.js
 <br>
 - Website builders
+</div>
+
+</div>
+
+<div class="services-col-2 green-shadow" id="services-col-2" onclick="openService('services-col-2','services-info-2',1)">
+<img class="service-2" src="/images/svg/pencil-ruler-solid.svg">
+
+### Design Gráfico
+
+<div class="services-info-2" id="services-info-2">
+- Logótipo
+<br>
+- Cartões de Visita
+<br>
+- Flyers
+<br>
+- Desdobráveis
+<br>
+- Poster
 </div>
 
 </div>

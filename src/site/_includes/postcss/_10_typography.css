@@ -16,7 +16,8 @@ body.body-landing {
   background-color: $page-color-2;
   margin: 0;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
 }
 
 body.body-quote {
@@ -24,7 +25,8 @@ body.body-quote {
   background-color: $page-color-1;
   margin: 0;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
   color: $dark-blue;
 }
 
