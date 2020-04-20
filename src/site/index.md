@@ -10,7 +10,7 @@ layout: layouts/base.njk
 ## SOBRE
 
 <div class="about-col-1">
-Somos uma equipa jovem e competente, com uma missão em mente: redefinir objetivos estratégicos no panorama digital à medida do seu negócio e, consequentemente, obter resultados.
+Somos uma equipa jovem e competente, com uma missão em mente: redefinir objetivos estratégicos no panorama digital e, consequentemente, obter resultados à medida do seu negócio.
 <br><br>
 Os nossos conhecimentos nas principais áreas, sejam elas marketing, programação e design, são o combustível necessário para escalar a sua presença online.
 <br><br>

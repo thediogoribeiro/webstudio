@@ -143,8 +143,12 @@ function sendQuote(){
     alert("Nome e Email obrigatório");
   }
 }
+/*
+var isSafari = window.safari !== undefined;
+if (isSafari){
+  console.log("Safari, yeah!");
 
-
-
+}
++/
 
 
