@@ -10,11 +10,11 @@ layout: layouts/base.njk
 ## SOBRE
 
 <div class="about-col-1">
-Somos uma equipa dedicada que torna as tuas ideias de negócio numa realidade no mundo digital. 
+Somos uma equipa jovem e competente, com uma só missão em mente: redefinir os seus objetivos estratégicos no panorama digital e consequentemente obter resultados.
 <br><br>
-Ajudamos-te em toda a dimensão digital do negócio, desde a criação da identidade visual até ao arranque da tua plataforma digital.
+Os nossos conhecimentos nas principais áreas, sejam elas, marketing, programação e design são o combustível necessário para escalar a sua presença online.
 <br><br>
-As nossas valências passam pelo design, programação, engenharia, marketing e gestão.
+Desenhamos estratégias que potenciam verdadeiramente o seu negócio.
 </div>
 
 <div class="about-col-2">
@@ -118,7 +118,7 @@ As nossas valências passam pelo design, programação, engenharia, marketing e 
 
 <div class="talk-col-1">
 
-Se tiver alguma dúvida ou não souber concretamente o que precisa, pode entrar em contacto connosco através dos seguintes canais:
+Não hesite falar connosco para esclarecer qualquer dúvida. Pode contactar-nos diretamente via telemóvel ou email. Estamos sempre atentos.
 
 <p class="talk_text-1"><a href="mailto:info@zetazone.com"><img class="talk_img-1" src="/images/svg/envelope-regular.svg">info@zetazone.com</p></a>
 <p class="talk_text-2"><a href="https://api.whatsapp.com/send?phone=+351911999888"><img class="talk_img-2" src="/images/svg/whatsapp-brands.svg">+351 911 999 888</p></a>

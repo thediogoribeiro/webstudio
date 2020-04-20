@@ -1,41 +1,44 @@
+/*
 header {
-	@media screen (min-height $sm) and (max-width: $sme) {
+	@media screen (min-height $sm) and (max-width: $mde) {
 		height: 93vh;
-	}
-	@media screen (min-width: $md) and (max-width: $mde) {
-		height: 93vh;
-	}
-	@media screen (min-width: $xl) {
-		//height: 93vh;
 	}
 }
+*/
 
 .header_container {
-	@media screen and (min-width: $sm) and (max-width: $sme) {
-		height: 93vh;
-		grid-template-rows: 30% 36% 34%;
-	}
-	@media screen and (min-width: $md) and (max-width: $lge) {
-		height: 93vh;
-		grid-template-rows: 30% 36% 34%;
-	}
-	@media screen and (min-width: $xl) {
-		height: 100vh;
-		grid-template-rows: 1.5fr 0.5fr 0.5fr 1.5fr;
-	}
-	@media screen and (min-width: $xxl) {
-		padding-left: 60px;
-	}
 	position: relative;
 	z-index: 1; 
 	margin-top: -80px;
 	display: grid;
-	grid-template-columns: 1fr;
+	@media screen and (min-width: $sm) and (max-width: $sme) {
+		height: 93vh;
+		grid-template-rows: 30% 36% 34%;
+		grid-template-columns: 1fr;
+	}
+	@media screen and (min-width: $md) and (max-width: $mde) {
+		height: 93vh;
+		grid-template-rows: 30% 36% 34%;
+		grid-template-columns: 50% 50%;
+	}
+	@media screen and (min-width: $lg) and (max-width: $lge) {
+		height: 93vh;
+		grid-template-rows: 30% 36% 34%;
+		grid-template-columns: 30% 70%;
+	}
+	@media screen and (min-width: $xl) {
+		height: 100vh;
+		grid-template-rows: 1.5fr 0.5fr 0.5fr 1.5fr;
+		grid-template-columns: 25% 75%;
+	}
+	@media screen and (min-width: $xxl) {
+		padding-left: 60px;
+	}
 }
 
 .title {
 	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column-end: 3;
 	text-align: left;
 	color: $main-green;
 	position: relative;
@@ -55,7 +58,7 @@ header {
 
 .subtitle {
 	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column-end: 3;
 	text-align: left;
 	color: $main-green;
 	position: relative;
@@ -108,8 +111,14 @@ header {
 		grid-row-end: 5;
 		align-self: center;
 	}
-	@media screen and (min-width: $lg) {
+	@media screen and (min-width: $sm) and (max-width: $sme) {
+		justify-self: center;
+	}
+	@media screen and (min-width: $md) and (max-width: $mde) {
 		justify-self: left;
+	}
+	@media screen and (min-width: $lg) {
+		justify-self: center;
 	}
 }
 
