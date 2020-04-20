@@ -10,11 +10,11 @@ layout: layouts/base.njk
 ## SOBRE
 
 <div class="about-col-1">
-Somos uma equipa jovem e competente, com uma só missão em mente: redefinir os seus objetivos estratégicos no panorama digital e consequentemente obter resultados.
+Somos uma equipa jovem e competente, com uma missão em mente: redefinir objetivos estratégicos no panorama digital à medida do seu negócio e, consequentemente, obter resultados.
 <br><br>
-Os nossos conhecimentos nas principais áreas, sejam elas, marketing, programação e design são o combustível necessário para escalar a sua presença online.
+Os nossos conhecimentos nas principais áreas, sejam elas marketing, programação e design, são o combustível necessário para escalar a sua presença online.
 <br><br>
-Desenhamos estratégias que potenciam verdadeiramente o seu negócio.
+Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua ideia.
 </div>
 
 <div class="about-col-2">
@@ -118,7 +118,7 @@ Desenhamos estratégias que potenciam verdadeiramente o seu negócio.
 
 <div class="talk-col-1">
 
-Não hesite falar connosco para esclarecer qualquer dúvida. Pode contactar-nos diretamente via telemóvel ou email. Estamos sempre atentos.
+Não hesite em falar connosco para esclarecer qualquer dúvida. Pode contactar-nos diretamente via telemóvel ou email. Estamos sempre disponíveis.
 
 <p class="talk_text-1"><a href="mailto:info@zetazone.com"><img class="talk_img-1" src="/images/svg/envelope-regular.svg">info@zetazone.com</p></a>
 <p class="talk_text-2"><a href="https://api.whatsapp.com/send?phone=+351911999888"><img class="talk_img-2" src="/images/svg/whatsapp-brands.svg">+351 911 999 888</p></a>

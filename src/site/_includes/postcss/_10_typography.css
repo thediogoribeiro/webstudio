@@ -52,7 +52,6 @@ header {
 
 h1, h2, h3 {
   font-family: 'Arvo-Regular';
-  //font-family: 'Arvo-Bold';
   color: $text-color-1;
   font-weight: 600;
   margin-top: 2em;
@@ -79,7 +78,6 @@ p, a {
 }
 
 ul, ol {
-  //font-family: 'Klavika-Regular';
   padding-left: 1em;
 }
 

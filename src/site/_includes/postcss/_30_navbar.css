@@ -75,7 +75,6 @@
   height: 90vh;
   width: 100vw;
   text-align: center;
-  font-color: $grey;
   background-color: $dark-blue;
   .nav_about {
     position: relative;

@@ -12,7 +12,7 @@ header {
 	margin-top: -80px;
 	display: grid;
 	@media screen and (min-width: $sm) and (max-width: $sme) {
-		height: 93vh;
+		height: 91vh;
 		grid-template-rows: 30% 36% 34%;
 		grid-template-columns: 1fr;
 	}
@@ -35,6 +35,12 @@ header {
 		padding-left: 60px;
 	}
 }
+
+/*
+.safariHead {
+	height: 89vh !important;
+} 
+*/
 
 .title {
 	grid-column-start: 1;
