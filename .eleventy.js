@@ -1,48 +1,5 @@
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-/*
-const nodemailer = require('nodemailer');
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const app = express();
-
-
-app.use(cors());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static('public'));
-app.use(express.json({limit:'1mb'}));
-
-
-app.post('/sendEmail',(req, res) => {
-  var transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'zindestudio@gmail.com',
-      pass: 'Z3codeZinde'
-    }
-  });
-  
-  var mailOptions = {
-    from: 'zindestudio@gmail.com',
-    to: req.body.email,
-    subject: 'Sending Email using Node.js',
-    text: req.body.nome + 'That was easy!' + req.body.campos
-  };
-  
-  transporter.sendMail(mailOptions, function(error, info){
-    if (error) {
-      console.log(error);
-      res.send({ res: "ERROR" });
-    } else {
-      console.log('Email sent: ' + info.response);
-      res.send({ res: "OK" });
-    }
-  });
-});*/
-
-
 
 module.exports = function(config) {
 
