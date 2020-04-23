@@ -59,6 +59,13 @@ h1, h2, h3 {
   line-height: 1;
 }
 
+header {
+  .subtitle {
+    font-family: 'Klavika-Regular' ;
+    color: $grey !important;
+  }
+}
+
 h1 {
   font-size: 3em;
   margin-top: 0.4em;
