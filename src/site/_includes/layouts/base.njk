@@ -7,19 +7,17 @@
     <title>{{ title }}</title>
   </head>
   <body id="body-landing" class="body-landing" onresize="imgChange()" onload="imgChange()">
-
-    <div class="container">
-      {% include "header.njk" %}
-      {{ content | safe }}
-      {% include "footer.njk" %}
-    </div>
-
     {% set js %}
       {% include "js/core.js" %}
     {% endset %}
     <script>
       {{ js | jsmin | safe }}
     </script>
+    <div class="container">
+      {% include "header.njk" %}
+      {{ content | safe }}
+      {% include "footer.njk" %}
+    </div>
 
   </body>
 </html>
