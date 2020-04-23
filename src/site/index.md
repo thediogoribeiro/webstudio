@@ -1,6 +1,6 @@
 ---
-title: Zeta Zone
-subtitle: Digital Studio
+title: ZETA ZONE
+subtitle: DIGITAL STUDIO
 layout: layouts/base.njk
 ---
 
