@@ -121,7 +121,7 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
 Não hesite em falar connosco para esclarecer qualquer dúvida. Pode contactar-nos diretamente via telemóvel ou email. Estamos sempre disponíveis.
 
 <p class="talk_text-1"><a href="mailto:info@zetazone.eu"><img class="talk_img-1" src="/images/svg/envelope-regular.svg">info@zetazone.eu</p></a>
-<p class="talk_text-2"><a href="https://api.whatsapp.com/send?phone=+351919969862"><img class="talk_img-2" src="/images/svg/whatsapp-brands.svg">+351 919 969 862</p></a>
+<p class="talk_text-2"><a href="https://api.whatsapp.com/send?phone=+351919969862" target="_blank"><img class="talk_img-2" src="/images/svg/whatsapp-brands.svg">+351 919 969 862</p></a>
 
 </div>
 
