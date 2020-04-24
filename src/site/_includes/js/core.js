@@ -73,7 +73,7 @@ function imgChange(){
   } else if (document.documentElement.clientWidth < 768){
     x.src = "/images/house-mobile.png";
   } else {
-    x.src = "/images/house-desktop-31.png";
+    x.src = "/images/house-desktop-3.png";
   };
 }
 

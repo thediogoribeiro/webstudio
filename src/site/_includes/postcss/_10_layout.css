@@ -15,6 +15,7 @@
 */
 
 header {
+  //overflow-x: hidden;
   @media screen and (min-width: $sm) and (max-width: $sme) {
     padding: 0 25px 0 25px;
   }
