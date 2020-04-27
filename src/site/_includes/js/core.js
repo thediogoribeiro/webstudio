@@ -122,6 +122,23 @@ function sendQuote(){
     body += "\n\nCampos: "+campos;
     body = encodeURIComponent(body);
     window.open('mailto:info@zetazone.com?subject=Orçamento_Zeta_Zone&body='+body);
+    /*
+    var nome = document.getElementById("form_nome").value;
+    var email = document.getElementById("form_email").value;
+    var obs = document.getElementById("form_obs").value;
+    const options = {
+      method: 'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({nome:nome, email:email, obs:obs, campos:campos})
+    };
+    fetch('/sendEmail', options).then(function(res) {
+      return res.json()
+    }).then(function(data) {
+      if(data.res=="ok") alert("Enviado com sucesso");
+      else alert("Erro ao enviar email, entre em contato de outra forma");
+    }).catch(function(error) {
+      console.error(error)
+    })*/
   }else{
     alert("Nome e Email obrigatório");
   }
