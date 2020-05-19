@@ -47,7 +47,7 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
 <div class="services-col-3 green-shadow" id="services-col-3" onclick="openService('services-col-3','services-info-3',2)">
 <img class="service-3" src="/images/svg/desktop-solid.svg">
 
-### Website Customizado
+### Programação
 
 <div class="services-info-3" id="services-info-3">
 - HTML
@@ -59,6 +59,8 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
 - Javascript
 <br>
 - Node.js
+<br>
+- Android Apps
 <br>
 - Website builders
 </div>
