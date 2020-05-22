@@ -4,8 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/glide.core.min.css">
+    <link rel="stylesheet" href="/css/glide.theme.min.css">
     <link rel="icon" type="image/x-icon" href="/images/website-icon/icon_zeta_01.ico">
     <title>{{ ZETAZONE }}</title>
+    <meta name="description" content="O Zeta Zone é um estúdio digital focado em potenciar negócios online. Cobrimos as áreas do Marketing Digital | Programação | Design e Webdesign">
+    <meta name="keywords" content="digital studio, digital, studio, website, web, development, dev, construção, programação, coding, design, web design, marketing, marketing digital, vendas digitais, SEO, google ads, sketch, negócio, online, negócio online, esboço, cartão, banner, flyer, html, css, sass, javascript, js, node, node.js, pay per click, publicidade paga, redes sociais, gestão de redes, pantone, aplicação móvel, aplicação, app, android">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164512398-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -27,6 +31,20 @@
       {% include "footer.njk" %}
     </div>
     <script src="//code.tidio.co/sbuzyrplte07syzsrtqibx2kkcswjett.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const config = {
+        type: "carousel",
+        breakpoints: {
+          500: { perView: 1},
+          1023: { perView: 2},
+          1300: { perView: 3},
+          1600: { perView: 4},
+        },
+        autoplay: 8000,
+      };
+      new Glide(".glide", config).mount();
+    </script>
   </body>
 </html>
 

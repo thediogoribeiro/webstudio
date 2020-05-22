@@ -109,10 +109,31 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
 
 ## CLIENTES
 
-<img class="img_client-1" id="client-1" src="/images/clients/cll-color.png">
-<img class="img_client-2" id="client-2" src="/images/clients/congresso_da_saude_PNG.png">
+<div class="glide">
+
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide"><img class="img_client-1" src="/images/clients/cll-color.png"></li>
+      <li class="glide__slide"><img class="img_client-2" src="/images/clients/congresso_da_saude_PNG.png"></li>
+      <li class="glide__slide"><img class="img_client-3" src="/images/clients/congresso_da_saude_PNG.png"></li>
+      <li class="glide__slide"><img class="img_client-4" src="/images/clients/cll-color.png"></li>
+    </ul>
+  </div>
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&#60;</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#62;</button>
+  </div>
 
 </div>
+
+<!--
+<img class="img_client-1" id="client-1" src="/images/clients/cll-color.png">
+<img class="img_client-2" id="client-2" src="/images/clients/congresso_da_saude_PNG.png">
+-->
+
+</div>
+
+
 <!---------------------------------------------------------------------->
 <div id="talk">
 

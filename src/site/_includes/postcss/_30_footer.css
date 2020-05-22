@@ -11,12 +11,16 @@
 	}
 
 	.footer-col-1 {
+		@media screen and (min-width: $sm) and (max-width: $sme) {
+			padding: 0 18%;
+		}
 		@media screen and (min-width: $md) and (max-width: $mde) {
 			grid-row-start: 1;
 			grid-row-end: 2;
 			grid-column-start: 1;
 			grid-column-end: 2;
 			align-self: start;
+			justify-self: center;
 		}
 		@media screen and (min-width: $lg) {
 			grid-row-start: 1;
@@ -24,15 +28,20 @@
 			grid-column-start: 1;
 			grid-column-end: 2;
 			align-self: start;
+			justify-self: center;
 		}
 	}
 	.footer-col-2 {
+		@media screen and (min-width: $sm) and (max-width: $sme) {
+			padding: 0 30%;
+		}
 		@media screen and (min-width: $md) and (max-width: $mde) {
 			grid-row-start: 1;
 			grid-row-end: 2;
 			grid-column-start: 2;
 			grid-column-end: 3;
 			align-self: start;
+			justify-self: center;
 		}
 		@media screen and (min-width: $lg) {
 			grid-row-start: 1;
@@ -40,15 +49,20 @@
 			grid-column-start: 3;
 			grid-column-end: 4;
 			align-self: start;
+			justify-self: center;
 		}
 	}
 	.footer-col-3 {
+		@media screen and (min-width: $sm) and (max-width: $sme) {
+			padding: 0 21%;
+		}
 		@media screen and (min-width: $md) and (max-width: $mde) {
 			grid-row-start: 2;
 			grid-row-end: 3;
 			grid-column-start: 1;
 			grid-column-end: 3;
 			align-self: start;
+			justify-self: center;
 		}
 		@media screen and (min-width: $lg) {
 			grid-row-start: 1;
@@ -56,6 +70,7 @@
 			grid-column-start: 2;
 			grid-column-end: 3;
 			align-self: start;
+			justify-self: center;
 		}
 	}
 	
@@ -72,11 +87,20 @@
 	p {
 		margin: 0px 0 5px 0;
 	}
+	hr {
+		margin: 20px 0;
+		@media screen and (min-width: $md) {
+			width: 100%;
+		}
+		@media screen and (min-width: $sm) and (max-width: $sme) {
+
+		}
+	}
 }
 
 .body-landing {
 	#footer {
-		h3, p, a {
+		h3, p, a, hr {
 			color: $main-green;
 		}
 		svg {
@@ -87,7 +111,7 @@
 
 .body-quote {
 	#footer {
-		h3, p, a {
+		h3, p, a, hr {
 			color: $dark-blue;
 		}
 		path {
@@ -95,5 +119,7 @@
 		}
 	}
 }
+
+
 
 

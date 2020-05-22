@@ -19,6 +19,13 @@ body {
   width: 100vw;
 }
 
+/*
+.container {
+  max-width: 3000px !important;
+  padding: 0 !important;
+}
+*/
+
 header {
   @media screen and (min-width: $sm) and (max-width: $sme) {
     padding: 0 25px 0 25px;
