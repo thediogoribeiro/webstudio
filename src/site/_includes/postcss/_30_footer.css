@@ -1,12 +1,12 @@
 #footer {
 	@media screen and (min-width: $md) and (max-width: $mde) {
 		display: grid;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 0.1fr;
 		grid-template-columns: 1fr 1fr;
 	}
 	@media screen and (min-width: $lg) {
 		display: grid;
-		grid-template-rows: 1fr;
+		grid-template-rows: 1fr 0.1fr;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
@@ -96,6 +96,40 @@
 
 		}
 	}
+
+	#copyright {
+		grid-row-start: 3;
+		grid-row-end: 4;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		color: #f2f2f2 !important;
+		font-size: 12px;
+		width: 100%;
+		@media screen and (min-width: $sm) and (max-width: $lge) {
+			justify-self: center;
+		}
+		@media screen and (min-width: $xl) {
+			margin-left: 40px;
+			text-align: left;
+		}
+	}
+
+	.copyright {
+		@media screen and (min-width: $sm) and (max-width: $sme) {
+			margin-top: 50px;
+		}
+		@media screen and (min-width: $md) and (max-width: $mde) {
+			margin-top: -30px;
+		}
+		@media screen and (min-width: $lg) {
+			margin-top: 30px;
+		}
+	}
+
+	.privacy, .trademark {
+		display: inline-block;
+		margin-right: 20px;
+	}
 }
 
 .body-landing {
@@ -119,6 +153,7 @@
 		}
 	}
 }
+
 
 
 
