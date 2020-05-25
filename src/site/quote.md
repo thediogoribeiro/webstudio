@@ -63,6 +63,3 @@ Optimização google
 </form>
 
 </div>
-
-
-/* <div class="input_btn"><button onclick="sendQuote()" class="quote_btn" >ENVIAR</button></div> */

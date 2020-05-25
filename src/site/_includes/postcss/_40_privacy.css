@@ -1,0 +1,32 @@
+#privacy {
+	overflow: hidden;
+	padding-bottom: 0;
+	@media screen and (min-width: $sm) and (max-width: $sme) {
+		padding-top: 0;
+		margin-top: 0;
+	}
+	@media screen and (min-width: $md) {
+		padding-top: 0;
+		margin-top: 40px;
+	}
+	h3 {
+		margin: 0 20px;
+		@media screen and (min-width: $md) {
+			margin: 40px 30px 30px 30px;
+		}
+	}
+	h2 {
+		margin: 30px 20px;
+		@media screen and (min-width: $md) {
+			margin: 50px 30px;
+		}
+	}
+	p {
+		text-align: left;
+		@media screen and (min-width: $md) {
+			text-align: left;
+			margin: 30px 20px 30px 20px;
+		}
+	}
+}
+
