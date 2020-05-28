@@ -1,5 +1,9 @@
 ---
 title: A post page
+subtitle:
+image: /images/blog/think-hats.png 
+description:
+tags: Zetazeta
 date: 2018-03-21
 ---
 

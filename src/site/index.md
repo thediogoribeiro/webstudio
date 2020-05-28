@@ -127,8 +127,31 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
 </div>
 
 </div>
+<!---------------------------------------------------------------------->
+<div id="blog">
+
+## BLOG 
 
 
+<div class="blog_feed">
+  {%- for page in collections.posts | reverse -%}
+    {% if loop.index < 3 %}
+      <div class="blog_post">
+        <div class="blog_image_box"><img class="blog_image" src="{{ page.data.image }}"></div>
+        <div class="blog_title"><a href="{{ page.url }}">{{ page.data.title }}</a></div>
+        <div class="blog_date_tag">
+          <div class="blog_date"><time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time></div>
+          {%- set tagUrl -%}/tags/{{ page.data.tags }}/{%- endset -%}
+          <div class="blog_tag"><a href="{{ tagUrl | url }}">{{ page.data.tags }}</a></div>
+        </div>
+      </div> 
+    {%- endif -%}
+  {%- endfor -%}
+</div>
+
+<p class="all-posts"><a href="{{ '/posts/' | url }}">Ver todos</a></p>
+
+</div>
 <!---------------------------------------------------------------------->
 <div id="talk">
 
