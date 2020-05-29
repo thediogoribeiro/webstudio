@@ -18,17 +18,3 @@ templateEngineOverride: njk, md
   </div>
 </div>
 
-<!--
-<h2 class="">{{ title }}</h2>
-<h2 class="">{{ subtitle }}</h2>
-<h2 class="">{{ tags }}</h2>
-<p class="date">Posted as an example, on <time datetime="{{ date }}">{{ date | dateDisplay }}</time></p>
-<main>
-  {{ content | safe }}
-  <div class="footnote">
-    <p>
-      This page is part of the posts section.
-    </p>
-  </div>
-</main>
--->
