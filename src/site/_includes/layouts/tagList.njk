@@ -10,7 +10,7 @@ layout: layouts/quote.njk
 	<div class="taglist">
 	{% for tag in collections.tagList %}
 	  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-	  <div class="tag_item"><a href="{{ tagUrl | url }}" id="tag" class="tag">{{ tag }}</a></div>
+	  <div class="tag_item"><a onload="tagColor()" href="{{ tagUrl | url }}" id="tag" class="tag">{{ tag }}</a></div>
 	{% endfor %}
 	</div>
 </div>

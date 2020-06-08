@@ -139,10 +139,25 @@ function sendQuote(){
     }).catch(function(error) {
       console.error(error)
     })*/
-  }else{
+  } else {
     alert("Nome e Email obrigatório");
   }
 }
 
-  
+function init() {
+  imgChange();
+  tagColor();
+}
+
+function tagColor(){
+  var className = document.getElementsByClassName('tag');
+  var classnameCount = className.length;
+
+  for(var i = 0; i < classnameCount; i++){
+    console.log(className[i].innerHTML) 
+  }
+}
+
+
+
 

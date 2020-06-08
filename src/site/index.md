@@ -9,7 +9,7 @@ layout: layouts/base.njk
 
 ## SOBRE
 
-<div class="about-col-1">
+<div class="about-col-1" data-aos="fade-right"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
 Somos uma equipa jovem e competente, com uma missão em mente: redefinir objetivos estratégicos no panorama digital e, consequentemente, obter resultados à medida do seu negócio.
 <br><br>
 Os nossos conhecimentos nas principais áreas, sejam elas marketing, programação e design, são o combustível necessário para escalar a sua presença online.
@@ -17,7 +17,7 @@ Os nossos conhecimentos nas principais áreas, sejam elas marketing, programaç�
 Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua ideia.
 </div>
 
-<div class="about-col-2">
+<div class="about-col-2" data-aos="fade-left"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
 <img class="img_team" src="/images/team-big.svg">
 </div>
 
@@ -27,7 +27,7 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
 
 ## SERVIÇOS
 
-<div class="services-col-1 green-shadow" id="services-col-1" onclick="openService('services-col-1','services-info-1',0)">
+<div class="services-col-1" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine" id="services-col-1" onclick="openService('services-col-1','services-info-1',0)">
 <img class="service-1" src="/images/svg/object-group-regular.svg">
 
 ### Design Web
@@ -44,7 +44,7 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
 
 </div>
 
-<div class="services-col-3 green-shadow" id="services-col-3" onclick="openService('services-col-3','services-info-3',2)">
+<div class="services-col-3" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine" id="services-col-3" onclick="openService('services-col-3','services-info-3',2)">
 <img class="service-3" src="/images/svg/desktop-solid.svg">
 
 ### Programação
@@ -67,7 +67,7 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
 
 </div>
 
-<div class="services-col-2 green-shadow" id="services-col-2" onclick="openService('services-col-2','services-info-2',1)">
+<div class="services-col-2" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine" id="services-col-2" onclick="openService('services-col-2','services-info-2',1)">
 <img class="service-2" src="/images/svg/pencil-ruler-solid.svg">
 
 ### Design Gráfico
@@ -86,7 +86,7 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
 
 </div>
 
-<div class="services-col-4 green-shadow" id="services-col-4" onclick="openService('services-col-4','services-info-4',3)">
+<div class="services-col-4" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine" id="services-col-4" onclick="openService('services-col-4','services-info-4', 3)">
 <img class="service-4" src="/images/svg/bullseye-solid.svg">
 
 ### Marketing Digital
@@ -132,24 +132,21 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
 
 ## BLOG 
 
-
-<div class="blog_feed">
+<div class="blog_feed" id="blog_feed">
   {%- for page in collections.posts | reverse -%}
-    {% if loop.index < 3 %}
-      <div class="blog_post">
+    {%- if loop.index < site.screenRes -%}
+      <div class="blog_post" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
         <div class="blog_image_box"><img class="blog_image" src="{{ page.data.image }}"></div>
+        {%- set tagUrl -%}/tags/{{ page.data.tags }}/{%- endset -%}
+        <div class="blog_tag" ><a class="tag" href="{{ tagUrl | url }}">{{ page.data.tags }}</a></div>
         <div class="blog_title"><a href="{{ page.url }}">{{ page.data.title }}</a></div>
-        <div class="blog_date_tag">
-          <div class="blog_date"><time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time></div>
-          {%- set tagUrl -%}/tags/{{ page.data.tags }}/{%- endset -%}
-          <div class="blog_tag"><a href="{{ tagUrl | url }}">{{ page.data.tags }}</a></div>
-        </div>
+        <div class="blog_date"><time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time></div>
       </div> 
     {%- endif -%}
   {%- endfor -%}
 </div>
 
-<p class="all-posts"><a href="{{ '/posts/' | url }}">Ver todos</a></p>
+<p class="all-posts" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine"><a href="{{ '/posts/' | url }}">Ver todos</a></p>
 
 </div>
 <!---------------------------------------------------------------------->
@@ -157,7 +154,7 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
 
 ## FALE CONNOSCO
 
-<div class="talk-col-1">
+<div class="talk-col-1" data-aos="fade-right"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
 
 Não hesite em falar connosco para esclarecer qualquer dúvida. Pode contactar-nos diretamente via telemóvel ou email. Estamos sempre disponíveis.
 
@@ -166,14 +163,13 @@ Não hesite em falar connosco para esclarecer qualquer dúvida. Pode contactar-n
 
 </div>
 
-<div class="talk-col-2">
+<div class="talk-col-2" data-aos="fade-left"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
 
 <img class="" src="/images/conversation.svg">
 
 </div>
 
 </div>
-
 
 
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/glide.core.min.css">
     <link rel="stylesheet" href="/css/glide.theme.min.css">
     <link rel="icon" type="image/x-icon" href="/images/website-icon/icon_zeta_01.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>{{ ZETAZONE }}</title>
     <meta name="description" content="O Zeta Zone é um estúdio digital focado em potenciar negócios online. Cobrimos as áreas do Marketing Digital | Programação | Design e Webdesign">
     <meta name="keywords" content="digital studio, digital, studio, website, web, development, dev, construção, programação, coding, design, web design, marketing, marketing digital, vendas digitais, SEO, google ads, sketch, negócio, online, negócio online, esboço, cartão, banner, flyer, html, css, sass, javascript, js, node, node.js, pay per click, publicidade paga, redes sociais, gestão de redes, pantone, aplicação móvel, aplicação, app, android">
@@ -17,8 +18,12 @@
       gtag('js', new Date());
       gtag('config', 'UA-164512398-1');
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
-  <body id="body-landing" class="body-landing" onresize="imgChange()" onload="imgChange()">
+  <body id="body-landing" class="body-landing" onresize="imgChange()" onload="init()">
+    <script>
+      AOS.init();
+    </script>
     {% set js %}
       {% include "js/core.js" %}
     {% endset %}
@@ -40,6 +45,7 @@
           1023: { perView: 2},
           1300: { perView: 3},
           1600: { perView: 4},
+          5000: { perView: 4},
         },
         autoplay: 8000,
       };

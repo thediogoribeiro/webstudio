@@ -2,6 +2,7 @@
 @import '_00_variables.css';
 @import '_10_layout.css';
 @import '_10_typography.css';
+@import '_20_animations.css';
 @import '_20_buttons.css';
 @import '_20_icons.css';
 @import '_30_navbar.css';
