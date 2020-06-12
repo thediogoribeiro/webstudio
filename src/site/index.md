@@ -142,6 +142,7 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
         <div class="blog_title"><a href="{{ page.url }}">{{ page.data.title }}</a></div>
         <div class="blog_date"><time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time></div>
       </div> 
+      <div class="tag_item" style="display: none"></div>
     {%- endif -%}
   {%- endfor -%}
 </div>

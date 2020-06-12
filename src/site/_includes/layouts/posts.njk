@@ -10,10 +10,11 @@ templateEngineOverride: njk, md
       <div class="blog_post">
         <div class="blog_image_box"><img class="blog_image" src="{{ page.data.image }}"></div>
         {%- set tagUrl -%}/tags/{{ page.data.tags }}/{%- endset -%}
-        <div class="blog_tag"><a href="{{ tagUrl | url }}">{{ page.data.tags }}</a></div>
-        <div class="blog_title"><a onload="tagColor()" href="{{ page.url }}">{{ page.data.title }}</a></div>
+        <div class="blog_tag"><a class="tag" href="{{ tagUrl | url }}">{{ page.data.tags }}</a></div>
+        <div class="blog_title"><a href="{{ page.url }}">{{ page.data.title }}</a></div>
         <div class="blog_date"><time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time></div>
       </div>
+      <div class="tag_item" style="display: none"></div>
     {%- endfor -%}
   </div>
   <p class="all-posts"><a href="/#blog" style="color:#1a2040 !important;">Voltar.</a></p>

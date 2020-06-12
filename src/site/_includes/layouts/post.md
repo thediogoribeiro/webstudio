@@ -8,11 +8,12 @@ templateEngineOverride: njk, md
 	<div class="post">
 		<img class="post_image" src="{{ image }}">
 		{%- set tagUrl -%}/tags/{{ page.data.tags }}/{%- endset -%}
-	  <div class="blog_tag"><a onload="tagColor()" href="{{ tagUrl | url }}">{{ tags }}</a></div>
+	  <div class="blog_tag"><a class="tag" href="{{ tagUrl | url }}">{{ tags }}</a></div>
 		<h2 class="post_title">{{ title }}</h2>
 		<div class="blog_date"><time datetime="{{ page.date }}">{{ date | dateDisplay("LLLL d, y") }}</time></div>
 	  <div class="post_text">{{ content | safe }}</div>
 	  <div class="footnote"><p class="">Este post foi escrito por</p></div>
   </div>
+  <div class="tag_item" style="display: none"></div>
 </div>
 

@@ -1,5 +1,5 @@
 .navbar_list {
-  grid-template-rows: 1fr;
+  grid-template-rows: 27px;
   position: relative;
   z-index: 10;
   width: 90vw;
@@ -33,6 +33,23 @@
   li {
     display: inline;
     margin-top: 0;
+  }
+
+  .anchor_icon {
+    text-align: left;
+    @media screen and (min-width: $xl) and (max-width: $xxl) {
+      margin-left: 15px;
+    }
+    @media screen and (min-width: $xxl) {
+      margin-left: 20%;
+    }
+  }
+
+  .nav_icon {
+    position: relative;
+    top: -18px;
+    height: 60px; 
+    width: auto;
   }
 }
 

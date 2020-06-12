@@ -18,6 +18,7 @@ function showBurger(id1, id2) {
   var about = document.getElementById("about");
   var services = document.getElementById("services");
   var clients = document.getElementById("clients");
+  var blog = document.getElementById("blog");
   var talk = document.getElementById("talk");
   var footer = document.getElementById("footer")
   if (x.style.display === "block") {
@@ -122,23 +123,6 @@ function sendQuote(){
     body += "\n\nCampos: "+campos;
     body = encodeURIComponent(body);
     window.open('mailto:info@zetazone.com?subject=Orçamento_Zeta_Zone&body='+body);
-    /*
-    var nome = document.getElementById("form_nome").value;
-    var email = document.getElementById("form_email").value;
-    var obs = document.getElementById("form_obs").value;
-    const options = {
-      method: 'POST',
-      headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({nome:nome, email:email, obs:obs, campos:campos})
-    };
-    fetch('/sendEmail', options).then(function(res) {
-      return res.json()
-    }).then(function(data) {
-      if(data.res=="ok") alert("Enviado com sucesso");
-      else alert("Erro ao enviar email, entre em contato de outra forma");
-    }).catch(function(error) {
-      console.error(error)
-    })*/
   } else {
     alert("Nome e Email obrigatório");
   }
@@ -151,13 +135,37 @@ function init() {
 
 function tagColor(){
   var className = document.getElementsByClassName('tag');
+  var classColor1 = document.getElementsByClassName('blog_tag');
+  var classColor2 = document.getElementsByClassName('tag_item');
   var classnameCount = className.length;
-
+  //console.log(classColor1.length, classColor2.length)
   for(var i = 0; i < classnameCount; i++){
-    console.log(className[i].innerHTML) 
+    switch (className[i].innerHTML) {
+      case "Zetazeta":
+        classColor1[i].style.backgroundColor = "#04d976";
+        classColor2[i].style.backgroundColor = "#04d976";
+        classColor1[i].style.border = "2px solid #04d976";
+        classColor2[i].style.border = "2px solid #04d976";
+        className[i].style.color = "#1a2040";
+        break;
+      case "Studio":
+        classColor1[i].style.backgroundColor = "#f2f2f2";
+        classColor2[i].style.backgroundColor = "#f2f2f2";
+        classColor1[i].style.border = "2px solid #1a2040";
+        classColor2[i].style.border = "2px solid #1a2040";
+        className[i].style.color = "#1a2040";
+        break;
+      case "Digital":
+        classColor1[i].style.backgroundColor = "#1a2040";
+        classColor2[i].style.backgroundColor = "#1a2040";
+        classColor1[i].style.border = "2px solid #1a2040";
+        classColor2[i].style.border = "2px solid #1a2040";
+        className[i].style.color = "#f2f2f2";
+        break; 
+    }
   }
 }
 
 
-
+// ""
 

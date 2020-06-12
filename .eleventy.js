@@ -72,6 +72,25 @@ module.exports = function(config) {
 
   // pass some assets right through
   config.addPassthroughCopy("./src/site/images");
+  config.addPassthroughCopy('./src/site/admin');
+
+  const {
+    DateTime
+  } = require("luxon");
+
+  // JavaScript to make the dates in the postslist more readable
+  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  config.addFilter('htmlDateString', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {
+      zone: 'utc'
+    }).toFormat('yy-MM-dd');
+  });
+
+  config.addFilter("readableDate", dateObj => {
+    return DateTime.fromJSDate(dateObj, {
+      zone: 'utc'
+    }).toFormat("dd-MM-yy");
+  });
 
   // make the seed target act like prod
   env = (env=="seed") ? "prod" : env;
