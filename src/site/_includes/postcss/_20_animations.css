@@ -1,0 +1,74 @@
+/* Hover and focus effects */
+
+.navbar_list {
+	li:focus, li:hover {
+		text-decoration: underline;
+		text-decoration-color: $dark-blue;
+	}
+}
+
+.header_btn:hover, .header_btn:focus, .services-col-1:hover, .services-col-1:focus, .services-col-2:hover, .services-col-2:focus, .services-col-3:hover, .services-col-3:focus, .services-col-4:hover, .services-col-4:focus {
+  box-shadow: 0px 5px 4px $grey;
+  cursor: pointer;
+}
+
+#talk {
+	.talk_text-1, .talk_text-2 {
+		a:focus, a:hover {
+			@media screen and (min-width: $sm) and (max-width: $lge) {
+				text-decoration: underline;
+			}
+			@media screen and (min-width: $xl) {
+				text-decoration: underline;
+				text-decoration-color: $dark-blue;
+			}
+		}
+	}
+}
+
+#footer {
+	a:focus, a:hover {
+		@media screen and (min-width: $sm) and (max-width: $lge) {
+			text-decoration: underline;
+		}
+	}
+}
+
+#body-landing {
+	#footer {
+		a:focus, a:hover {
+			@media screen and (min-width: $xl) {
+				text-decoration: underline;
+				text-decoration-color: $neon-green;
+			}
+		}
+	}
+	#navbar {
+		a:focus, a:hover {
+			@media screen and (min-width: $xl) {
+				text-decoration: underline;
+				text-decoration-color: $dark-blue;
+			}
+		}
+	}
+}
+
+#body-quote {
+	#footer {
+		a:focus, a:hover {
+			@media screen and (min-width: $xl) {
+				text-decoration: underline;
+				text-decoration-color: $dark-blue;
+			}
+		}
+	}
+}
+
+/* Text effects */
+
+.bold {
+	font-weight: 900;
+	color: $grey !important;
+}
+
+

@@ -18,6 +18,13 @@ body {
   overflow-x: hidden;
 }
 
+/*
+.container {
+  max-width: 3000px !important;
+  padding: 0 !important;
+}
+*/
+
 header {
   @media screen and (min-width: $sm) and (max-width: $sme) {
     padding: 0 25px 0 25px;
@@ -30,7 +37,7 @@ header {
   }
 }
 
-#about, #clients, #talk, #quote {
+#about, #clients, #blog, #post, #tagfeed, #talk, #quote, #privacy {
   @media screen and (min-width: $sm) and (max-width: $sme) {
     padding: 40px 20px;
   }
@@ -62,19 +69,19 @@ header {
 
 footer {
   @media screen and (min-width: $sm) and (max-width: $sme) {
-    margin: 40px 0 80px 0;
+    margin: 40px 0 40px 0;
   }
   @media screen and (min-width: $md) and (max-width: $mde) {
     margin: 40px 80px 10px 80px;
   }
   @media screen and (min-width: $lg) and (max-width: $xl) {
-    margin: 40px 80px 80px 80px;
+    margin: 40px 80px 40px 80px;
   }
   @media screen and (min-width: $xl) and (max-width: $xxl) {
-    margin: 40px 160px 80px 160px;
+    margin: 40px 160px 40px 160px;
   }
   @media screen and (min-width: $xxl) {
-    margin: 40px 160px 80px 160px;
+    margin: 40px 160px 40px 160px;
   }
 }
 

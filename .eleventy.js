@@ -1,5 +1,6 @@
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginNavigation = require("@11ty/eleventy-navigation");
 
 module.exports = function(config) {
 
@@ -17,8 +18,45 @@ module.exports = function(config) {
   // add support for syntax highlighting
   config.addPlugin(syntaxHighlight);
 
+  // add support for posts nesting
+  config.addPlugin(pluginNavigation);
+
   // minify the html output
   config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
+
+  // posts collection
+  config.addCollection('posts', collection => {
+    return collection.getFilteredByGlob('src/site/posts/*.md');
+  });
+
+  // tags collection
+  config.addCollection('tagList', collection => {
+    let tagSet = new Set();
+    collection.getAll().forEach(function(item) {
+      if( "tags" in item.data ) {
+        let tags = item.data.tags;
+
+        tags = tags.filter(function(item) {
+          switch(item) {
+            // this list should match the `filter` list in tags.njk
+            case "all":
+            case "nav":
+            case "post":
+            case "posts":
+              return false;
+          }
+
+          return true;
+        });
+
+        for (const tag of tags) {
+          tagSet.add(tag);
+        }
+      }
+    });
+    // returning an array in addCollection works in Eleventy 0.5.3
+    return [...tagSet];
+  });
 
   // compress and combine js files
   config.addFilter("jsmin", function(code) {
@@ -34,6 +72,25 @@ module.exports = function(config) {
 
   // pass some assets right through
   config.addPassthroughCopy("./src/site/images");
+  config.addPassthroughCopy('./src/site/admin');
+
+  const {
+    DateTime
+  } = require("luxon");
+
+  // JavaScript to make the dates in the postslist more readable
+  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  config.addFilter('htmlDateString', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {
+      zone: 'utc'
+    }).toFormat('yy-MM-dd');
+  });
+
+  config.addFilter("readableDate", dateObj => {
+    return DateTime.fromJSDate(dateObj, {
+      zone: 'utc'
+    }).toFormat("dd-MM-yy");
+  });
 
   // make the seed target act like prod
   env = (env=="seed") ? "prod" : env;
@@ -50,3 +107,25 @@ module.exports = function(config) {
   };
 
 };
+
+/**
+ * @param {*} doc A real big object full of all sorts of information about a document.
+ * @returns {String} the markup of the first image.
+ */
+function extractFirstImage(doc) {
+  if (!doc.hasOwnProperty('templateContent')) {
+    console.warn('❌ Failed to extract image: Document has no property `templateContent`.');
+    return;
+  }
+
+  const content = doc.templateContent;
+
+  if (content.includes('<img')) {
+    const imgTagBegin = content.indexOf('<img');
+    const imgTagEnd = content.indexOf('>', imgTagBegin);
+
+    return content.substring(imgTagBegin, imgTagEnd + 1);
+  }
+
+  return '';
+}

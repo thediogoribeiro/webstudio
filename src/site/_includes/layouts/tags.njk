@@ -1,0 +1,35 @@
+---
+permalink: /tags/{{ tag }}/
+layout: layouts/quote.njk
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+renderData:
+  title: Tagged “{{ tag }}”
+---
+
+<div id="blog">
+  <h2 style="color:#1a2040 !important;">{{ tag }}</h2>
+  {%- for page in collections.posts | reverse -%}
+    {% if  page.data.tags == tag %}
+      <div class="blog_post">
+        <div class="blog_image_box"><img class="blog_image" src="{{ page.data.image }}"></div>
+        {%- set tagUrl -%}/tags/{{ page.data.tags }}/{%- endset -%}
+        <div class="blog_tag"><a class="tag" href="{{ tagUrl | url }}">{{ page.data.tags }}</a></div>
+        <div class="blog_title"><a href="{{ page.url }}">{{ page.data.title }}</a></div>
+        <div class="blog_date"><time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time></div>
+      </div>
+      <div class="tag_item" style="display: none"></div>
+    {% endif %}
+  {%- endfor -%}
+  <div class="tag_item" style="display: none"></div>
+  <p class="all-posts">See <a href="{{ '/tags/' | url }}" id="tag" style="color:#1a2040 !important;">all tags</a>.</p>
+</div>

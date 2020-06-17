@@ -2,6 +2,7 @@
 @import '_00_variables.css';
 @import '_10_layout.css';
 @import '_10_typography.css';
+@import '_20_animations.css';
 @import '_20_buttons.css';
 @import '_20_icons.css';
 @import '_30_navbar.css';
@@ -10,7 +11,8 @@
 @import '_40_about.css';
 @import '_40_services.css';
 @import '_40_clients.css';
+@import '_40_blog.css';
 @import '_40_talk.css';
 @import '_40_quote.css';
-
+@import '_40_privacy.css';
 

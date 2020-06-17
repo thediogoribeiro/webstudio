@@ -1,12 +1,13 @@
 .navbar_list {
-  grid-template-rows: 1fr;
+  grid-template-rows: 27px;
   position: relative;
   z-index: 10;
   width: 90vw;
   padding: 23px 5vw;
-  background-color: #f2f2f2;
+  background-color: $grey;
   text-decoration: none;
-  border-bottom: 3px solid $dark-blue;
+  //border-bottom: 3px solid $dark-blue;
+  font-weight: 600;
   @media screen and (min-width: $sm) and (max-width: $sme) {
     display: none;
   }
@@ -20,18 +21,35 @@
     left: -80px;
   }
   @media screen and (min-width: $md) and (max-width: $mde) {
-    grid-template-columns: 12% 1fr 1fr 1fr 1fr;
+    grid-template-columns: 10% 0.9fr 1.1fr 1.2fr 0.8fr 1.5fr;
   }
   @media screen and (min-width: $lg) and (max-width: $lge){
-    grid-template-columns: 30% 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20% 0.9fr 1.1fr 1.2fr 0.8fr 1.5fr;
   }
   @media screen and (min-width: $xl) {
-    grid-template-columns: 40% 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25% 0.9fr 1.1fr 1.2fr 0.8fr 1.5fr;
   }
 
   li {
     display: inline;
     margin-top: 0;
+  }
+
+  .anchor_icon {
+    text-align: left;
+    @media screen and (min-width: $xl) and (max-width: $xxl) {
+      margin-left: 15px;
+    }
+    @media screen and (min-width: $xxl) {
+      margin-left: 20%;
+    }
+  }
+
+  .nav_icon {
+    position: relative;
+    top: -18px;
+    height: 60px; 
+    width: auto;
   }
 }
 

@@ -1,17 +1,19 @@
 ---
-layout: layouts/base.njk
+layout: layouts/quote.njk
 pageClass: posts
 templateEngineOverride: njk, md
 ---
 
-<p class="date">
-  Posted as an example, on <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
-</p>
-<main>
-  {{ content | safe }}
-  <div class="footnote">
-    <p>
-      This page is part of the posts section.
-    </p>
+<div id="post">
+	<div class="post">
+		<img class="post_image" src="{{ image }}">
+		{%- set tagUrl -%}/tags/{{ page.data.tags }}/{%- endset -%}
+	  <div class="blog_tag"><a class="tag" href="{{ tagUrl | url }}">{{ tags }}</a></div>
+		<h2 class="post_title">{{ title }}</h2>
+		<div class="blog_date"><time datetime="{{ page.date }}">{{ date | dateDisplay("LLLL d, y") }}</time></div>
+	  <div class="post_text">{{ content | safe }}</div>
+	  <div class="footnote" style="display: none"><p class="">Este post foi escrito por</p></div>
   </div>
-</main>
+  <div class="tag_item" style="display: none"></div>
+</div>
+

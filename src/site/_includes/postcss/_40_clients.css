@@ -2,7 +2,7 @@
 	background-color: $grey;
 	display: grid;
 	grid-template-rows: 1fr 2.5fr;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 50% 50%;
 	@media screen and (min-width: $xl) {
 		margin-bottom: -40px;
 	}
@@ -26,46 +26,59 @@
 		}
 	}
 
-	.img_client-1 {
+
+	.glide {
 		grid-row-start: 2;
 		grid-row-end: 3;
 		grid-column-start: 1;
-		grid-column-end: 2;
-		align-self: end;
+		grid-column-end: 3;
 	}
-	img.img_client-1 {
-		align-self: center;
-		justify-self: center;
-		height: auto;
+
+	.glide__slides {
+		align-items: center;
+	}
+
+	.glide__arrow {
 		@media screen and (min-width: $sm) and (max-width: $sme) {
-			width: 100%;
-			max-width: 120px;
+			top: 50%;
 		}
 		@media screen and (min-width: $md) {
-			width: 100%;
-			max-width: 180px;
+			top: 40%;
 		}
+		color: #1a2040;
+		border: 2px solid #1a2040;
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		font-weight: 700;
+	}
+
+	.glide__arrow--left {
+		left: 0%;
+	}
+
+	.glide__arrow--right {
+		right: 0%;
+	}
+
+	.img_client-1 {
+		width: 150px;
+		height: auto;
 	}
 
 	.img_client-2 {
-		grid-row-start: 2;
-		grid-row-end: 3;
-		grid-column-start: 2;
-		grid-column-end: 3;
-		overflow: hidden;
-		align-self: end;
-	}
-	img.img_client-2 {
-		align-self: center;
-		justify-self: center;
+		width: 200px;
 		height: auto;
-		width: 100%;
-		@media screen and (min-width: $sm) and (max-width: $sme) {
-			max-width: 225px;	
-		}
-		@media screen and (min-width: $md) {
-			max-width: 300px;
-		}	
+	}
+
+	.img_client-3 {
+		width: 175px;
+		height: auto;
+		border: 1px solid #1a2040;
+	}
+
+	.img_client-4 {
+		width: 220px;
+		height: auto;
 	}
 }
 
