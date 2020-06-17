@@ -142,6 +142,17 @@
 	margin-bottom: 20px;
 }
 
+.inner_image {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	@media screen and (min-width: $md) {
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+}
+
 .post_text, .footnote {
 	text-align: left;
 }

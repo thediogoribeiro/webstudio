@@ -141,21 +141,21 @@ function tagColor(){
   //console.log(classColor1.length, classColor2.length)
   for(var i = 0; i < classnameCount; i++){
     switch (className[i].innerHTML) {
-      case "Zetazeta":
+      case "ZetaZone":
         classColor1[i].style.backgroundColor = "#04d976";
         classColor2[i].style.backgroundColor = "#04d976";
         classColor1[i].style.border = "2px solid #04d976";
         classColor2[i].style.border = "2px solid #04d976";
         className[i].style.color = "#1a2040";
         break;
-      case "Studio":
+      case "Curiozetas":
         classColor1[i].style.backgroundColor = "#f2f2f2";
         classColor2[i].style.backgroundColor = "#f2f2f2";
         classColor1[i].style.border = "2px solid #1a2040";
         classColor2[i].style.border = "2px solid #1a2040";
         className[i].style.color = "#1a2040";
         break;
-      case "Digital":
+      case "Ferramentas":
         classColor1[i].style.backgroundColor = "#1a2040";
         classColor2[i].style.backgroundColor = "#1a2040";
         classColor1[i].style.border = "2px solid #1a2040";

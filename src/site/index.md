@@ -116,7 +116,7 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
       <li class="glide__slide"><img class="img_client-1" src="/images/clients/cll-color.png"></li>
       <li class="glide__slide"><img class="img_client-2" src="/images/clients/congresso_da_saude_PNG.png"></li>
       <li class="glide__slide"><img class="img_client-3" src="/images/clients/logo-rv-100.jpg"></li>
-      <li class="glide__slide"><img class="img_client-4" src="/images/clients/cll-color.png"></li>
+      <li class="glide__slide"><img class="img_client-4" src="/images/clients/claritylabporto.png"></li>
     </ul>
   </div>
   <div class="glide__arrows" data-glide-el="controls">

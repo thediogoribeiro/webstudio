@@ -12,7 +12,7 @@ templateEngineOverride: njk, md
 		<h2 class="post_title">{{ title }}</h2>
 		<div class="blog_date"><time datetime="{{ page.date }}">{{ date | dateDisplay("LLLL d, y") }}</time></div>
 	  <div class="post_text">{{ content | safe }}</div>
-	  <div class="footnote"><p class="">Este post foi escrito por</p></div>
+	  <div class="footnote" style="display: none"><p class="">Este post foi escrito por</p></div>
   </div>
   <div class="tag_item" style="display: none"></div>
 </div>
