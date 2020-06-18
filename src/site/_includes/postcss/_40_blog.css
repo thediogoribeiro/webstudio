@@ -116,6 +116,21 @@
 
 /* POST itself */
 
+#post {
+	@media screen and (min-width: $md) and (max-width: $mde) {
+		margin: 0 60px;
+	}
+	@media screen and (min-width: $lg) and (max-width: $lge) {
+		margin: 0 120px;
+	}
+	@media screen and (min-width: $xl) and (max-width: $xle) {
+		margin: 0 180px;
+	}
+	@media screen and (min-width: $xxl) {
+		margin: 0 320px;
+	}
+}
+
 .post {
 	border: 3px solid $dark-blue;
 	border-radius: 10px;
@@ -148,13 +163,15 @@
 }
 
 .inner_image {
-	width: 100%;
+	width: 70%;
 	height: auto;
+	margin-left: 15%;
+	margin-right: 15%;
 	margin-top: 20px;
 	@media screen and (min-width: $md) {
-		width: 60%;
-		margin-left: 20%;
-		margin-right: 20%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
 	}
 }
 
