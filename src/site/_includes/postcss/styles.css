@@ -15,4 +15,5 @@
 @import '_40_talk.css';
 @import '_40_quote.css';
 @import '_40_privacy.css';
-
+@import 'glide.core.min.css';
+@import 'glide.theme.min.css';
