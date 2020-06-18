@@ -136,10 +136,10 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
   {%- for page in collections.posts | reverse -%}
     {%- if loop.index < site.screenRes -%}
       <div class="blog_post" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <div class="blog_image_box"><img class="blog_image" src="{{ page.data.image }}"></div>
+        <div class="blog_image_box"><a href="{{ page.url }}"><img class="blog_image" src="{{ page.data.image }}"></a></div>
         {%- set tagUrl -%}/tags/{{ page.data.tags }}/{%- endset -%}
-        <div class="blog_tag" ><a class="tag" href="{{ tagUrl | url }}">{{ page.data.tags }}</a></div>
-        <div class="blog_title"><a href="{{ page.url }}">{{ page.data.title }}</a></div>
+        <div class="blog_tag"><a class="tag" href="{{ tagUrl | url }}">{{ page.data.tags }}</a></div>
+        <h4 class="blog_title"><a href="{{ page.url }}">{{ page.data.title }}</a></h4>
         <div class="blog_date"><time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time></div>
       </div> 
       <div class="tag_item" style="display: none"></div>

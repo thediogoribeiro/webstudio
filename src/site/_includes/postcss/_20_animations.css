@@ -51,6 +51,14 @@
 			}
 		}
 	}
+	#blog {
+		a:focus, a:hover {
+			@media screen and (min-width: $xl) {
+				text-decoration: underline;
+				text-decoration-color: $dark-blue;
+			}
+		}
+	}
 }
 
 #body-quote {

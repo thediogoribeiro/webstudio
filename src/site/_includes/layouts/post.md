@@ -8,9 +8,9 @@ templateEngineOverride: njk, md
 	<div class="post">
 		<img class="post_image" src="{{ image }}">
 		{%- set tagUrl -%}/tags/{{ page.data.tags }}/{%- endset -%}
-	  <div class="blog_tag"><a class="tag" href="{{ tagUrl | url }}">{{ tags }}</a></div>
+	  <div class="blog_tag post_tag"><a class="tag" href="{{ tagUrl | url }}">{{ tags }}</a></div>
 		<h2 class="post_title">{{ title }}</h2>
-		<div class="blog_date"><time datetime="{{ page.date }}">{{ date | dateDisplay("LLLL d, y") }}</time></div>
+		<div class="blog_date post_date"><time datetime="{{ page.date }}">{{ date | dateDisplay("LLLL d, y") }}</time></div>
 	  <div class="post_text">{{ content | safe }}</div>
 	  <div class="footnote" style="display: none"><p class="">Este post foi escrito por</p></div>
   </div>
