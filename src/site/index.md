@@ -147,7 +147,7 @@ Desenvolvemos soluções 100% personalizadas que potenciam verdadeiramente a sua
   {%- endfor -%}
 </div>
 
-<p class="all-posts" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine"><a href="{{ '/posts/' | url }}">Ver todos</a></p>
+<p class="all-posts" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine"><a href="{{ '/posts/' | url }}">Ver todos.</a></p>
 
 </div>
 <!---------------------------------------------------------------------->

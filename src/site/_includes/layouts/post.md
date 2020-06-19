@@ -15,5 +15,6 @@ templateEngineOverride: njk, md
 	  <div class="footnote" style="display: none"><p class="">Este post foi escrito por</p></div>
   </div>
   <div class="tag_item" style="display: none"></div>
+  <p class="all-posts" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-sine"><a href="{{ '/posts/' | url }}">Ver todos.</a></p>
 </div>
 

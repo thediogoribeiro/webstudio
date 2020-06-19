@@ -66,18 +66,27 @@ function navbarGo() {
 }
 
 // Header image selection
+
 function imgChange(){
-  var x = document.getElementById('img_city');
-  var y0 = document.getElementById('client-2');
+  var x = document.getElementById('img_city-2');
+  var y = document.getElementById('img_city-1');
+  var z = document.getElementById('img_city-3');
   if (document.documentElement.clientWidth >= 768 && document.documentElement.clientWidth < 1280){
-    x.src = "/images/house-desktop.png";
+    x.style.display = "block";
   } else if (document.documentElement.clientWidth < 768){
-    x.src = "/images/house-mobile.png";
+    y.style.display = "block";
   } else {
-    x.src = "/images/house-desktop-3.png";
+    z.style.display = "block";
   };
 }
 
+//preload 3 images:
+preloadimages(['/images/house-desktop.png', '/images/house-mobile.png', '/images/house-desktop-3.png', '/images/clients/logo-rv-100.jpg', '/images/clients/claritylabporto.png']).done(function(images){
+  images.sort(function(a,b){
+    //return a.width-b.width //sort images by each image's width property, ascending
+  })
+})
+ 
 // Open services list
 function openService(clas1, clas2,s) {
   var parent = document.getElementById(clas1);
@@ -138,7 +147,6 @@ function tagColor(){
   var classColor1 = document.getElementsByClassName('blog_tag');
   var classColor2 = document.getElementsByClassName('tag_item');
   var classnameCount = className.length;
-  //console.log(classColor1.length, classColor2.length)
   for(var i = 0; i < classnameCount; i++){
     switch (className[i].innerHTML) {
       case "ZetaZone":
@@ -166,6 +174,4 @@ function tagColor(){
   }
 }
 
-
-// ""
 
