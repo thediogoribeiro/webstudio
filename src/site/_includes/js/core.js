@@ -64,28 +64,6 @@ function navbarGo() {
   talk.style.display = "block";
   footer.style.display = "grid";
 }
-
-// Header image selection
-
-function imgChange(){
-  var x = document.getElementById('img_city-2');
-  var y = document.getElementById('img_city-1');
-  var z = document.getElementById('img_city-3');
-  if (document.documentElement.clientWidth >= 768 && document.documentElement.clientWidth < 1280){
-    x.style.display = "block";
-  } else if (document.documentElement.clientWidth < 768){
-    y.style.display = "block";
-  } else {
-    z.style.display = "block";
-  };
-}
-
-//preload 3 images:
-preloadimages(['/images/house-desktop.png', '/images/house-mobile.png', '/images/house-desktop-3.png', '/images/clients/logo-rv-100.jpg', '/images/clients/claritylabporto.png']).done(function(images){
-  images.sort(function(a,b){
-    //return a.width-b.width //sort images by each image's width property, ascending
-  })
-})
  
 // Open services list
 function openService(clas1, clas2,s) {
@@ -134,43 +112,6 @@ function sendQuote(){
     window.open('mailto:info@zetazone.com?subject=Orçamento_Zeta_Zone&body='+body);
   } else {
     alert("Nome e Email obrigatório");
-  }
-}
-
-function init() {
-  imgChange();
-  tagColor();
-}
-
-function tagColor(){
-  var className = document.getElementsByClassName('tag');
-  var classColor1 = document.getElementsByClassName('blog_tag');
-  var classColor2 = document.getElementsByClassName('tag_item');
-  var classnameCount = className.length;
-  for(var i = 0; i < classnameCount; i++){
-    switch (className[i].innerHTML) {
-      case "ZetaZone":
-        classColor1[i].style.backgroundColor = "#04d976";
-        classColor2[i].style.backgroundColor = "#04d976";
-        classColor1[i].style.border = "2px solid #04d976";
-        classColor2[i].style.border = "2px solid #04d976";
-        className[i].style.color = "#1a2040";
-        break;
-      case "Curiozetas":
-        classColor1[i].style.backgroundColor = "#f2f2f2";
-        classColor2[i].style.backgroundColor = "#f2f2f2";
-        classColor1[i].style.border = "2px solid #1a2040";
-        classColor2[i].style.border = "2px solid #1a2040";
-        className[i].style.color = "#1a2040";
-        break;
-      case "Ferramentas":
-        classColor1[i].style.backgroundColor = "#1a2040";
-        classColor2[i].style.backgroundColor = "#1a2040";
-        classColor1[i].style.border = "2px solid #1a2040";
-        classColor2[i].style.border = "2px solid #1a2040";
-        className[i].style.color = "#f2f2f2";
-        break; 
-    }
   }
 }
 

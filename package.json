@@ -17,6 +17,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "aos": "^3.0.0-beta.6",
     "autoprefixer": "^9.8.0",
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
