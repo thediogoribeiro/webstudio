@@ -21,7 +21,7 @@ renderData:
   {%- for page in collections.posts | reverse -%}
     {% if  page.data.tags == tag %}
       <div class="blog_post">
-        <div class="blog_image_box"><img class="blog_image" src="{{ page.data.image }}"></div>
+        <div class="blog_image_box"><a href="{{ page.url }}"><img class="blog_image" src="{{ page.data.image }}"></a></div>
         {%- set tagUrl -%}/tags/{{ page.data.tags }}/{%- endset -%}
         <div class="blog_tag"><a class="tag" href="{{ tagUrl | url }}">{{ page.data.tags }}</a></div>
         <div class="blog_title"><a href="{{ page.url }}">{{ page.data.title }}</a></div>
